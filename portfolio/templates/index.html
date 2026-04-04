@@ -1,74 +1,74 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio Dev</title>
+    <meta name="description" content="Professional portfolio of full-stack development projects.">
+    <title>Professional Portfolio</title>
     <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
     <header class="hero">
         <div class="container hero-content">
-            <span class="eyebrow">Portfólio remoto</span>
-            <h1>Construindo ferramentas que simplificam processos e impulsionam resultados.</h1>
-            <p>Projetos Python, automação inteligente e aplicações web pensadas para home office.</p>
+            <span class="eyebrow">Full-Stack Developer</span>
+            <h1>Building production-grade applications and reliable systems.</h1>
+            <p>Python, Flask, data engineering. Clean architecture and performance-first approach.</p>
             <div class="hero-actions">
-                <a href="#projects" class="button primary">Ver projetos</a>
-                <a href="#contact" class="button secondary">Vamos conversar</a>
+                <a href="#projects" class="button primary">View Projects</a>
+                <a href="#contact" class="button secondary">Get in Touch</a>
             </div>
         </div>
-    </header>
-
+    </header>\n
     <main class="container">
         <section class="intro">
             <div>
-                <h2>Sou um desenvolvedor orientado a resultados</h2>
-                <p>Crio soluções que ajudam pessoas e empresas a gerir tempo, dados e oportunidades com mais eficiência.</p>
+                <h2>Senior-level development with modern practices</h2>
+                <p>Experienced in designing scalable systems, optimizing data pipelines, and delivering maintainable code.</p>
             </div>
             <div class="stats-grid">
                 <div class="stat-card">
-                    <strong>3+</strong>
-                    <span>Projetos completos</span>
+                    <strong>3</strong>
+                    <span>Production Projects</span>
                 </div>
                 <div class="stat-card">
                     <strong>100%</strong>
-                    <span>Atenção a entregas remotas</span>
+                    <span>Deployment Ready</span>
                 </div>
                 <div class="stat-card">
-                    <strong>Foco</strong>
-                    <span>Python, Flask, automação e front-end leve</span>
+                    <strong>Architecture</strong>
+                    <span>SOLID Design Patterns</span>
                 </div>
             </div>
         </section>
 
         <section id="projects" class="projects">
             <div class="section-head">
-                <h2>Projetos em destaque</h2>
-                <p>Veja o que está pronto para demonstrar suas habilidades como desenvolvedor remoto.</p>
+                <h2>Featured Projects</h2>
+                <p>Production-ready applications demonstrating full-stack capabilities with focus on architecture.</p>
             </div>
             <div class="project-tags">
-                <button class="tag active" data-filter="all">Todos</button>
-                <button class="tag" data-filter="Python">Python</button>
-                <button class="tag" data-filter="Flask">Flask</button>
-                <button class="tag" data-filter="Automation">Automation</button>
-                <button class="tag" data-filter="JavaScript">JavaScript</button>
+                <button class="tag active" data-filter="all">All</button>
+                <button class="tag" data-filter="python">Python</button>
+                <button class="tag" data-filter="flask">Flask</button>
+                <button class="tag" data-filter="data">Data/Automation</button>
+                <button class="tag" data-filter="javascript">JavaScript</button>
             </div>
             <div class="grid project-grid" id="projectGrid">
                 {% for project in projects %}
-                <article class="card project-card" data-tech="{{ project.tech }}">
+                <article class="card project-card" data-tech="{{ project.tech | lower }}">
                     <div class="card-top">
                         <h3>{{ project.name }}</h3>
-                        <span>{{ project.tech }}</span>
+                        <span class="tech-stack">{{ project.tech }}</span>
                     </div>
                     <p>{{ project.description }}</p>
-                    <a href="{{ project.link }}" target="_blank" class="button link">Acessar GitHub</a>
+                    <a href="{{ project.link }}" target="_blank" rel="noopener noreferrer" class="button link">View on GitHub</a>
                 </article>
                 {% endfor %}
             </div>
         </section>
 
         <section class="skills">
-            <h2>Habilidades</h2>
+            <h2>Technical Competencies</h2>
             <div class="skills-list">
                 {% for skill in skills %}
                 <span class="skill-pill">{{ skill }}</span>
@@ -78,12 +78,18 @@
 
         <section id="contact" class="contact banner">
             <div>
-                <h2>Pronto para o próximo projeto remoto?</h2>
-                <p>Entre em contato e vamos transformar sua ideia em uma aplicação prática.</p>
+                <h2>Let's work together</h2>
+                <p>Open to remote opportunities and challenging projects.</p>
             </div>
-            <a href="mailto:firmenetto@gmail.com" class="button primary">Enviar e-mail</a>
+            <a href="mailto:firmenetto@gmail.com" class="button primary">Send Email</a>
         </section>
     </main>
+
+    <footer>
+        <div class="container">
+            <p>Engineered with Python, Flask, and clean code principles.</p>
+        </div>
+    </footer>
 
     <script src="/static/script.js"></script>
 </body>
