@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Dev</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="container hero-content">
+            <span class="eyebrow">Portfólio remoto</span>
+            <h1>Construindo ferramentas que simplificam processos e impulsionam resultados.</h1>
+            <p>Projetos Python, automação inteligente e aplicações web pensadas para home office.</p>
+            <div class="hero-actions">
+                <a href="#projects" class="button primary">Ver projetos</a>
+                <a href="#contact" class="button secondary">Vamos conversar</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="intro">
+            <div>
+                <h2>Sou um desenvolvedor orientado a resultados</h2>
+                <p>Crio soluções que ajudam pessoas e empresas a gerir tempo, dados e oportunidades com mais eficiência.</p>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <strong>3+</strong>
+                    <span>Projetos completos</span>
+                </div>
+                <div class="stat-card">
+                    <strong>100%</strong>
+                    <span>Atenção a entregas remotas</span>
+                </div>
+                <div class="stat-card">
+                    <strong>Foco</strong>
+                    <span>Python, Flask, automação e front-end leve</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="section-head">
+                <h2>Projetos em destaque</h2>
+                <p>Veja o que está pronto para demonstrar suas habilidades como desenvolvedor remoto.</p>
+            </div>
+            <div class="project-tags">
+                <button class="tag active" data-filter="all">Todos</button>
+                <button class="tag" data-filter="Python">Python</button>
+                <button class="tag" data-filter="Flask">Flask</button>
+                <button class="tag" data-filter="Automation">Automation</button>
+                <button class="tag" data-filter="JavaScript">JavaScript</button>
+            </div>
+            <div class="grid project-grid" id="projectGrid">
+                {% for project in projects %}
+                <article class="card project-card" data-tech="{{ project.tech }}">
+                    <div class="card-top">
+                        <h3>{{ project.name }}</h3>
+                        <span>{{ project.tech }}</span>
+                    </div>
+                    <p>{{ project.description }}</p>
+                    <a href="{{ project.link }}" target="_blank" class="button link">Acessar GitHub</a>
+                </article>
+                {% endfor %}
+            </div>
+        </section>
+
+        <section class="skills">
+            <h2>Habilidades</h2>
+            <div class="skills-list">
+                {% for skill in skills %}
+                <span class="skill-pill">{{ skill }}</span>
+                {% endfor %}
+            </div>
+        </section>
+
+        <section id="contact" class="contact banner">
+            <div>
+                <h2>Pronto para o próximo projeto remoto?</h2>
+                <p>Entre em contato e vamos transformar sua ideia em uma aplicação prática.</p>
+            </div>
+            <a href="mailto:firmenetto@gmail.com" class="button primary">Enviar e-mail</a>
+        </section>
+    </main>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

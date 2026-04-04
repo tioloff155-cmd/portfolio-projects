@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Job Tracker</h1>
+        <form id="job-form">
+            <input type="text" id="company" placeholder="Empresa" required>
+            <input type="text" id="position" placeholder="Cargo" required>
+            <select id="status">
+                <option value="Candidat@">Candidat@</option>
+                <option value="Entrevista">Entrevista</option>
+                <option value="Rejeitado">Rejeitado</option>
+                <option value="Oferecido">Oferecido</option>
+            </select>
+            <select id="priority">
+                <option value="Alta">Alta</option>
+                <option value="Media">Média</option>
+                <option value="Baixa">Baixa</option>
+            </select>
+            <textarea id="notes" placeholder="Notas"></textarea>
+            <button type="submit">Salvar vaga</button>
+        </form>
+
+        <button id="export">Exportar CSV</button>
+        <div id="jobs"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
