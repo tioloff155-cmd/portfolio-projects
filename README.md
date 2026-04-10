@@ -8,14 +8,25 @@
 
 Architecting resilient backend systems, low-latency execution engines, and data pipelines. Focused on delivering production-ready computational solutions with strict risk management, concurrency, and performance optimization.
 
-## 🚀 Flagship Architecture
+---
 
-### [Project-N: High-Frequency Trading (HFT) Engine](./hft-trading-engine)
+## 🏗️ Architectural Standards
+
+All projects within this repository adhere to institutional-grade software principles:
+- **Resiliency**: Built-in circuit breakers, custom exception handling, and persistent state management.
+- **Latency Optimization**: Minimal dependency overhead, optimized SQL queries (WAL mode), and efficient WebSocket stream processing.
+- **Security**: Environment-based configuration, strict input validation, and secure API routing.
+- **Maintainability**: Clean code architecture (MVC/Modular), unified logging, and comprehensive documentation.
+
+---
+
+## 🚀 Flagship Engine
+
+### [HFT Trading Engine](./hft-trading-engine)
 An institutional-grade algorithmic trading engine designed for digital options execution. Built to continuously process concurrent WebSocket streams and manage real-time financial exposure.
 - **System Architecture**: Multi-threaded Python architecture with non-blocking I/O telemetry via Flask-SocketIO.
 - **Quantitative Risk Management**: Dynamic position sizing mathematically enforced by the **Kelly Criterion**, with a hard-coded Daily Peak/Drawdown Kill Switch.
 - **Persistence**: High-throughput SQLite implementation using `WAL` (Write-Ahead Logging) mode to guarantee ACID compliance during concurrent order executions.
-- **Techniques**: Exponential Moving Average (EMA) crossovers, RSI momentum filtering, and real-time Payout/Spread validation.
 
 ---
 
@@ -24,12 +35,12 @@ An institutional-grade algorithmic trading engine designed for digital options e
 ### [ETL Data Pipeline Engine](./etl-pipeline-engine)
 Data automation system designed for reliable extraction, transformation, and loading (ETL) routines.
 - **Mechanics**: Implemented robust functional pipelines leveraging `Pandas` for scalable matrix transformations.
-- **Use Case**: Eliminates manual friction by programmatically sanitizing and structuring large-scale raw data sets into actionable formats.
+- **Core Value**: Enterprise-scale CSV/Excel ingestion with schema validation and error-resilient transformation logic.
 
 ### [Recruitment Data Management API](./recruit-data-api)
 A modular Web Application built on a custom MVC structure for tracking lifecycle events.
 - **Mechanics**: RESTful logic wrapping a local persistence layer, coupled with a decoupled frontend using Vanilla JS.
-- **Focus**: Demonstrates clear separation of concerns, secure routing, and straightforward CRUD API design.
+- **Focus**: Clean separation of concerns, secure routing, and highly-maintainable CRUD API design.
 
 ### [Stateless Edge Application](./edge-portfolio-app)
 Minimalist, high-performance web deployment optimized for Sub-50ms Time-To-First-Byte (TTFB).
@@ -45,8 +56,6 @@ Minimalist, high-performance web deployment optimized for Sub-50ms Time-To-First
 *   **Systems & Operations**: Concurrent Threading, SQLite (WAL optimization), Git, Environment Management.
 
 ## Contact & Professional Network
-
-If you are looking for an engineer that treats code not just as a tool, but as an institutional asset:
 
 📫 **Get in touch**: firmenetto@gmail.com
 🔗 **GitHub Profile**: [@tioloff155-cmd](https://github.com/tioloff155-cmd)
