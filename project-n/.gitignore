@@ -1,0 +1,39 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+*.bak
+
+# SQLite databases
+*.db
+*.db-shm
+*.db-wal
+
+# Logging
+*.log
+logs/
+
+# User Scripts (BAT)
+*.bat
+
+# Scratch/Temporary files
+scratch/
+dump.txt
+final_results.txt
+test_*.py
+simple_summary.py
+check_results.py
+final_report_script.py
+reset.py
+_reset_db.py
+
+# VS Code / IDE stuff
+.vscode/
+.idea/

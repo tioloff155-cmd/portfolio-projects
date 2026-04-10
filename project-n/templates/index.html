@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OMNIQUANT // IQ DIGITAL</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.2/socket.io.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        sys: {
+                            bg: '#000000',
+                            surface: '#050505',
+                            border: '#1A1A1A',
+                            muted: '#525252',
+                            text: '#A3A3A3',
+                            white: '#EDEDED'
+                        },
+                        trade: {
+                            up: '#2EAA5D',
+                            down: '#E54040',
+                            active: '#2563EB',
+                            pending: '#F59E0B'
+                        }
+                    },
+                    fontFamily: {
+                        mono: ['"JetBrains Mono"', 'Menlo', 'Consolas', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap');
+        
+        body { 
+            background-color: #000000; 
+            color: #A3A3A3; 
+            font-family: 'JetBrains Mono', monospace; 
+            font-size: 11px;
+            height: 100vh; 
+            overflow: hidden; 
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        .tabular { font-variant-numeric: tabular-nums; letter-spacing: -0.02em; }
+        
+        ::-webkit-scrollbar { width: 2px; height: 2px; }
+        ::-webkit-scrollbar-track { background: #000000; }
+        ::-webkit-scrollbar-thumb { background: #333333; }
+        ::-webkit-scrollbar-thumb:hover { background: #525252; }
+
+        .btn-sys {
+            background: #050505;
+            border: 1px solid #1A1A1A;
+            color: #A3A3A3;
+            text-transform: uppercase;
+            transition: all 0.1s;
+        }
+        .btn-sys:hover { background: #1A1A1A; color: #EDEDED; }
+        .btn-sys:active { background: #2EAA5D; color: #000; border-color: #2EAA5D; }
+        
+        .btn-panic {
+            background: rgba(229, 64, 64, 0.05);
+            border: 1px solid rgba(229, 64, 64, 0.3);
+            color: #E54040;
+        }
+        .btn-panic:hover { background: rgba(229, 64, 64, 0.15); }
+
+        table { border-collapse: collapse; width: 100%; }
+        th { font-weight: 500; color: #525252; text-transform: uppercase; border-bottom: 1px solid #1A1A1A; padding-bottom: 6px; }
+        td { border-bottom: 1px solid #0A0A0A; padding: 6px 4px; }
+        tr:hover td { background-color: #050505; }
+        
+        input, textarea, select {
+            background: #000000;
+            border: 1px solid #1A1A1A;
+            color: #EDEDED;
+            font-family: 'JetBrains Mono', monospace;
+            padding: 4px 6px;
+            outline: none;
+        }
+        input:focus, textarea:focus, select:focus { border-color: #525252; }
+    </style>
+</head>
+<body class="flex flex-col select-none">
+
+    <header class="relative h-10 border-b border-sys-border flex items-center justify-between px-4 shrink-0">
+        <div class="flex items-center gap-4">
+            <div class="flex items-center gap-2">
+                <div class="w-1.5 h-1.5 bg-trade-up rounded-full opacity-80 animate-pulse" id="status-light"></div>
+                <span class="text-sys-white font-bold tracking-widest">OMNIQUANT <span class="text-sys-muted">||</span> IQ DIGITAL</span>
+            </div>
+            <div id="connection-status" class="text-[9px] text-sys-muted uppercase font-bold tabular">WS_DISCONNECTED</div>
+            <div id="iq-status" class="text-[9px] text-sys-muted uppercase font-bold tabular border-l border-sys-border pl-2">IQ_WAITING</div>
+        </div>
+
+        <div class="flex items-center gap-8 tabular text-xs">
+            <div class="flex gap-3">
+                <span class="text-sys-muted uppercase">Taxa_Acerto</span>
+                <span id="winrate-pct" class="text-trade-active font-bold">0.0%</span>
+            </div>
+            <div class="flex gap-3">
+                <span class="text-sys-muted">LUCRO_SESSÃO</span>
+                <span id="pnl-usd" class="text-sys-text">0.00</span>
+            </div>
+            <div class="flex gap-3 font-bold">
+                <span class="text-sys-muted">SALDO_IQ</span>
+                <span id="balance-display" class="text-sys-white">0.00</span>
+            </div>
+        </div>
+        
+        <!-- Progress Bar do Kill Switch -->
+        <div class="absolute bottom-0 left-0 w-full h-[2px] bg-sys-surface/50">
+            <div id="progress-bar-fill" class="h-full w-0 bg-trade-active transition-all duration-500 ease-out"></div>
+        </div>
+    </header>
+
+    <main class="flex-1 flex overflow-hidden">
+        
+        <aside class="w-[260px] border-r border-sys-border flex flex-col shrink-0 bg-sys-surface/30">
+            <div class="p-4 border-b border-sys-border">
+                <span class="text-sys-muted uppercase tracking-widest text-[9px] block mb-3">Ações do Sistema</span>
+                <div class="flex flex-col gap-2">
+                    <button onclick="toggleBot()" id="btn-toggle" class="btn-sys py-1.5 w-full text-left px-3 flex justify-between border-trade-active/30">
+                        <span id="toggle-text">[ LIGAR NÚCLEO ]</span> <span id="toggle-shortcut" class="text-sys-muted">F5</span>
+                    </button>
+                    <button onclick="panicBot()" class="btn-sys btn-panic py-1.5 w-full text-left px-3 mt-4 text-[10px]">
+                        [ PARAR NOVAS ENTRADAS ]
+                    </button>
+                </div>
+            </div>
+
+            <div class="p-4 border-b border-sys-border flex-1 overflow-y-auto terminal-scroll">
+                <span class="text-sys-muted uppercase tracking-widest text-[9px] block mb-3">Parâmetros</span>
+                <div class="space-y-3">
+                        <div>
+                            <label class="text-sys-muted text-[10px] block mb-2 uppercase tracking-wider">Ativos_Alvo (Lista)</label>
+                            <textarea id="ativos" class="w-full text-[10px] resize-none h-16" placeholder="Ex: EURUSD, GBPUSD">EURUSD, GBPUSD, USDJPY, AUDCAD, EURUSD-OTC, GBPUSD-OTC, USDJPY-OTC</textarea>
+                        </div>
+                    <div class="grid grid-cols-2 gap-2">
+                        <div>
+                            <label class="text-sys-muted text-[10px] block mb-1 uppercase">Risco Inicial (%)</label>
+                            <input type="number" id="risk_pct" value="0.5" step="0.1" min="0.1" class="w-full text-center text-[10px]">
+                        </div>
+                        <div>
+                            <label class="text-sys-muted text-[10px] block mb-1 uppercase">Duração (min)</label>
+                            <select id="duration" class="w-full text-center text-[10px]">
+                                <option value="1">1 min</option>
+                                <option value="2">2 min</option>
+                                <option value="3">3 min</option>
+                                <option value="5" selected>5 min</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-2">
+                        <div>
+                            <label class="text-sys-muted text-[10px] block mb-1 uppercase">Gales (Martingale)</label>
+                            <input type="number" id="gales" value="1" min="0" max="5" class="w-full text-center text-[10px]">
+                        </div>
+                        <div>
+                            <label class="text-sys-muted text-[10px] block mb-1 uppercase">Limite_Diário</label>
+                            <input type="number" id="max_trades" value="500" class="w-full text-[10px]">
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-2">
+                        <div>
+                            <label class="text-sys-muted text-[10px] block mb-1 uppercase">Stop Win (%)</label>
+                            <input type="number" id="stop_win" value="3.0" step="0.1" min="0.1" class="w-full text-center text-[10px] text-trade-up font-bold bg-trade-up/10">
+                        </div>
+                        <div>
+                            <label class="text-sys-muted text-[10px] block mb-1 uppercase">Stop Loss (%)</label>
+                            <input type="number" id="stop_loss" value="5.0" step="0.1" min="0.1" class="w-full text-center text-[10px] text-trade-down font-bold bg-trade-down/10">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="text-sys-muted text-[10px] block mb-1 uppercase">Payout Mínimo (%)</label>
+                        <input type="number" id="min_payout" value="80" step="1" min="0" max="100" class="w-full text-center text-[10px]">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="p-4 h-28 bg-sys-surface/20">
+                <div class="flex justify-between items-center mb-2">
+                    <span class="text-sys-muted uppercase tracking-widest text-[9px]">Trades Pendentes</span>
+                    <span id="pending-badge" class="font-bold text-sys-muted">0</span>
+                </div>
+                <div id="pending-ui" class="text-sys-muted text-[10px] space-y-1">Aguardando sinais...</div>
+            </div>
+        </aside>
+
+        <section class="flex-1 flex flex-col min-w-0">
+            
+            <div class="flex-[3] border-b border-sys-border flex flex-col overflow-hidden">
+                <div class="flex-1 overflow-auto px-4 py-2 terminal-scroll">
+                    <table class="w-full tabular">
+                        <thead class="sticky top-0 bg-sys-bg z-10 text-[10px]">
+                            <tr>
+                                <th class="text-left py-2">ATIVO</th>
+                                <th class="text-right py-2">ÚLTIMO_PREÇO</th>
+                                <th class="text-right py-2">SPREAD_EMA</th>
+                                <th class="text-right py-2">RSI_14</th>
+                                <th class="text-right py-2">SINAL</th>
+                            </tr>
+                        </thead>
+                        <tbody id="matrix-body" class="text-[11px]">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="flex-[2] flex">
+                
+                <div class="flex-1 border-r border-sys-border flex flex-col overflow-hidden">
+                    <div class="px-4 py-1.5 border-b border-sys-border bg-sys-surface/50 text-sys-muted text-[9px] uppercase tracking-widest">
+                        Livro de Negócios (Auditoria)
+                    </div>
+                    <div class="flex-1 overflow-auto px-4 py-2 terminal-scroll">
+                        <table class="w-full tabular text-[10px]">
+                            <tbody id="trades-table">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="flex-1 flex flex-col overflow-hidden">
+                    <div class="px-4 py-1.5 border-b border-sys-border bg-sys-surface/50 text-sys-muted text-[9px] uppercase tracking-widest">
+                        Log do Núcleo IQ Digital
+                    </div>
+                    <div id="log-feed" class="flex-1 overflow-auto px-4 py-2 text-[10px] space-y-0.5 tabular terminal-scroll">
+                        <div class="text-sys-muted italic">>> kernel.boot(): IQ Digital Engine verificado.</div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <script>
+        const socket = io();
+        
+        const UI = {
+            logs: document.getElementById('log-feed'),
+            matrix: document.getElementById('matrix-body'),
+            trades: document.getElementById('trades-table'),
+            balance: document.getElementById('balance-display'),
+            pnl: document.getElementById('pnl-usd'),
+            winrate: document.getElementById('winrate-pct'),
+            pendingBadge: document.getElementById('pending-badge'),
+            pendingUI: document.getElementById('pending-ui'),
+            connStatus: document.getElementById('connection-status'),
+            statusLight: document.getElementById('status-light')
+        };
+
+        let initialBalance = null;
+        let totalExits = 0;
+        let wins = 0;
+        let pendingCount = 0;
+        let totalPnl = 0;
+        const rowCache = {};
+
+        const timeStr = () => {
+            const d = new Date();
+            return `${d.getHours().toString().padStart(2,'0')}:${d.getMinutes().toString().padStart(2,'0')}:${d.getSeconds().toString().padStart(2,'0')}`;
+        };
+
+        socket.on('connect', () => {
+            UI.connStatus.textContent = 'WS_CONECTADO';
+            UI.connStatus.className = 'text-[9px] text-trade-up uppercase font-bold tabular';
+            socket.emit('get_history');
+        });
+
+        socket.on('disconnect', () => {
+            UI.connStatus.textContent = 'WS_DESCONECTADO';
+            UI.connStatus.className = 'text-[9px] text-trade-down uppercase font-bold tabular';
+            document.getElementById('iq-status').textContent = 'IQ_LOST';
+            document.getElementById('iq-status').className = 'text-[9px] text-sys-muted uppercase font-bold tabular border-l border-sys-border pl-2';
+        });
+
+        socket.on('update_net', (d) => {
+            const el = document.getElementById('iq-status');
+            if (d.status === 'online') {
+                el.textContent = 'IQ_CONNECTED';
+                el.className = 'text-[9px] text-trade-up uppercase font-bold tabular border-l border-sys-border pl-2';
+            } else {
+                el.textContent = 'IQ_OFFLINE';
+                el.className = 'text-[9px] text-trade-down uppercase font-bold tabular border-l border-sys-border pl-2';
+            }
+        });
+
+        // --- MATRIX LOGIC ---
+        socket.on('update_metric', (d) => {
+            if (!rowCache[d.asset]) createRow(d.asset);
+            updateRow(d);
+        });
+
+        function createRow(sym) {
+            const tr = document.createElement('tr');
+            tr.innerHTML = `
+                <td class="text-sys-white font-bold py-2">${sym}</td>
+                <td class="text-right cell-price tabular py-2">--</td>
+                <td class="text-right cell-spread tabular py-2 font-bold italic">--</td>
+                <td class="text-right cell-rsi tabular py-2">--</td>
+                <td class="text-right cell-signal py-2 font-black">--</td>
+            `;
+            UI.matrix.appendChild(tr);
+            rowCache[sym] = {
+                price: tr.querySelector('.cell-price'),
+                spread: tr.querySelector('.cell-spread'),
+                rsi: tr.querySelector('.cell-rsi'),
+                signal: tr.querySelector('.cell-signal')
+            };
+        }
+
+        function updateRow(d) {
+            const cells = rowCache[d.asset];
+            if (!cells) return;
+
+            cells.price.textContent = d.price.toFixed(5);
+            
+            const spread = d.spread || ((d.ema9 - d.ema20) / d.ema20) * 100;
+            cells.spread.textContent = (spread > 0 ? '+' : '') + spread.toFixed(3) + '%';
+            cells.spread.className = `text-right tabular font-bold italic ${spread > 0 ? 'text-trade-up' : 'text-trade-down'}`;
+
+            cells.rsi.textContent = d.rsi.toFixed(1);
+            cells.rsi.className = `text-right tabular ${d.rsi > 70 ? 'text-trade-down' : (d.rsi < 30 ? 'text-trade-up' : 'text-sys-text')}`;
+
+            const signal = d.signal || (d.ema9 > d.ema20 ? 'CALL' : 'PUT');
+            const isCall = signal === 'CALL';
+            cells.signal.textContent = isCall ? "↑ CALL" : "↓ PUT";
+            cells.signal.className = `text-right font-black ${isCall ? 'text-trade-up' : 'text-trade-down'}`;
+        }
+
+        // --- CORE HUD ---
+        socket.on('update_balance', (d) => {
+            // Só seta initialBalance com saldos reais (> 0)
+            if (initialBalance === null && d.balance > 0) initialBalance = d.balance;
+            if (d.balance > 0) UI.balance.textContent = d.balance.toFixed(2);
+            
+            if (initialBalance !== null && initialBalance > 0) {
+                const diff = d.balance - initialBalance;
+                UI.pnl.className = diff > 0 ? 'text-trade-up' : (diff < 0 ? 'text-trade-down' : 'text-sys-text');
+                UI.pnl.textContent = (diff >= 0 ? '+' : '') + diff.toFixed(2);
+            }
+        });
+
+        socket.on('new_log', (d) => {
+            const color = d.type === 'error' ? 'text-trade-down font-bold' : (d.type === 'success' ? 'text-trade-up font-bold' : (d.type === 'warning' ? 'text-trade-pending font-bold' : 'text-sys-text'));
+            const div = document.createElement('div');
+            div.className = `${color} border-l border-sys-border pl-2`;
+            div.textContent = `${timeStr()} | ${d.message}`;
+            UI.logs.appendChild(div);
+            UI.logs.scrollTop = UI.logs.scrollHeight;
+            if(UI.logs.children.length > 500) UI.logs.firstChild.remove();
+        });
+
+        function renderTrade(d, isHistory=false) {
+            const tr = document.createElement('tr');
+            
+            let resultColor, resultText;
+            if (d.result === 'pending') {
+                resultColor = 'text-trade-pending';
+                resultText = '⏳';
+                if (!isHistory) {
+                    pendingCount++;
+                    UI.pendingBadge.textContent = pendingCount;
+                    UI.pendingBadge.className = 'font-bold text-trade-pending';
+                    UI.pendingUI.innerHTML = `<div class="text-trade-pending">${d.direction.toUpperCase()} ${d.asset} $${d.amount}</div>`;
+                    UI.statusLight.className = "w-1.5 h-1.5 bg-trade-pending rounded-full animate-ping";
+                }
+            } else {
+                if (!isHistory) {
+                    pendingCount = Math.max(0, pendingCount - 1);
+                    UI.pendingBadge.textContent = pendingCount;
+                }
+                
+                if (d.result === 'win') {
+                    resultColor = 'text-trade-up font-bold';
+                    resultText = `+$${d.pnl_usd.toFixed(2)}`;
+                    totalExits++;
+                    wins++;
+                    totalPnl += d.pnl_usd;
+                } else if (d.result === 'loss') {
+                    resultColor = 'text-trade-down font-bold';
+                    resultText = `$${d.pnl_usd.toFixed(2)}`;
+                    totalExits++;
+                    totalPnl += d.pnl_usd;
+                } else {
+                    resultColor = 'text-sys-muted';
+                    resultText = 'EMPATE';
+                    totalExits++;
+                }
+
+                if (!isHistory && totalExits > 0) {
+                    const wr = (wins / totalExits) * 100;
+                    UI.winrate.textContent = wr.toFixed(1) + '%';
+                    UI.winrate.className = wr >= 50 ? 'text-trade-up font-bold' : 'text-trade-down font-bold';
+                }
+
+                if (!isHistory && pendingCount === 0) {
+                    UI.pendingBadge.className = 'font-bold text-sys-muted';
+                    UI.pendingUI.innerHTML = `<div class="text-[9px] italic opacity-50">Scanner ativo...</div>`;
+                    UI.statusLight.className = "w-1.5 h-1.5 bg-trade-up rounded-full opacity-80";
+                }
+            }
+
+            const dirColor = d.direction === 'call' ? 'text-trade-up font-bold' : 'text-trade-down font-bold';
+            const dirIcon = d.direction === 'call' ? '↑' : '↓';
+
+            let tStr = isHistory ? new Date(d.time * 1000).toLocaleTimeString('pt-BR', {hour12:false}) : timeStr();
+
+            tr.innerHTML = `
+                <td class="text-sys-muted w-20 py-1">${tStr}</td>
+                <td class="text-sys-white font-bold py-1">${d.asset}</td>
+                <td class="${dirColor} py-1 uppercase">${dirIcon} ${d.direction}</td>
+                <td class="text-right py-1">$${d.amount}</td>
+                <td class="text-right ${resultColor} py-1 tabular">${resultText}</td>
+            `;
+            
+            UI.trades.prepend(tr);
+            if(UI.trades.children.length > 100) UI.trades.lastChild.remove();
+        }
+
+        socket.on('trade_executed', (d) => {
+            renderTrade(d, false);
+        });
+
+        socket.on('history_data', (trades) => {
+            UI.trades.innerHTML = '';
+            totalExits = 0;
+            wins = 0;
+            totalPnl = 0;
+            
+            // Loop from oldest to newest (since DB returns newest first via ORDER BY time DESC)
+            for (let i = trades.length - 1; i >= 0; i--) {
+                const d = trades[i];
+                renderTrade(d, true);
+            }
+
+            // Update HUD
+            if (totalExits > 0) {
+                const wr = (wins / totalExits) * 100;
+                UI.winrate.textContent = wr.toFixed(1) + '%';
+                UI.winrate.className = wr >= 50 ? 'text-trade-up font-bold' : 'text-trade-down font-bold';
+            }
+        });
+
+        let botActive = false;
+
+        function updateBotUI(status) {
+            botActive = (status === 'running');
+            const btn = document.getElementById('btn-toggle');
+            const txt = document.getElementById('toggle-text');
+            const shortcut = document.getElementById('toggle-shortcut');
+            const light = UI.statusLight;
+
+            if (botActive) {
+                btn.classList.add('border-trade-down/50', 'bg-trade-down/5', 'text-trade-down');
+                txt.textContent = '[ DESLIGAR NÚCLEO ]';
+                shortcut.textContent = 'ESC';
+                light.className = "w-1.5 h-1.5 bg-trade-up rounded-full opacity-80 animate-pulse";
+            } else {
+                btn.classList.remove('border-trade-down/50', 'bg-trade-down/5', 'text-trade-down');
+                txt.textContent = '[ LIGAR NÚCLEO ]';
+                shortcut.textContent = 'F5';
+                light.className = "w-1.5 h-1.5 bg-sys-muted rounded-full opacity-30";
+            }
+        }
+
+        socket.on('bot_status', (data) => {
+            updateBotUI(data.status);
+        });
+
+        // --- PROGRESS BAR (KILL SWITCH) ---
+        socket.on('update_progress', (d) => {
+            const bar = document.getElementById('progress-bar-fill');
+            if (d.current >= d.start) {
+                // Lucro
+                const range = d.win_target - d.start;
+                const p = range > 0 ? ((d.current - d.start) / range) * 100 : 0;
+                const maxP = Math.min(100, Math.max(0, p));
+                bar.style.width = maxP + '%';
+                bar.className = 'h-full bg-trade-up transition-all duration-500 ease-out';
+            } else {
+                // Prejuízo
+                const range = d.start - d.loss_target;
+                const p = range > 0 ? ((d.start - d.current) / range) * 100 : 0;
+                const maxP = Math.min(100, Math.max(0, p));
+                bar.style.width = maxP + '%';
+                bar.className = 'h-full bg-trade-down transition-all duration-500 ease-out';
+            }
+        });
+
+        // --- INPUTS ---
+        function startBot() {
+            UI.matrix.innerHTML = '';
+            for (let k in rowCache) delete rowCache[k];
+            initialBalance = null;
+            totalExits = 0;
+            wins = 0;
+            pendingCount = 0;
+            totalPnl = 0;
+
+            const bar = document.getElementById('progress-bar-fill');
+            if(bar) { bar.style.width = '0%'; bar.className = 'h-full bg-trade-active transition-all duration-500 ease-out'; }
+
+            socket.emit('start_bot', {
+                ativos: document.getElementById('ativos').value,
+                risk_pct: document.getElementById('risk_pct').value,
+                duration: document.getElementById('duration').value,
+                gales: document.getElementById('gales').value,
+                max_trades: document.getElementById('max_trades').value,
+                stop_win: document.getElementById('stop_win').value,
+                stop_loss: document.getElementById('stop_loss').value,
+                min_payout: document.getElementById('min_payout').value
+            });
+        }
+
+        function toggleBot() {
+            if (botActive) stopBot();
+            else startBot();
+        }
+
+        function stopBot() { socket.emit('stop_bot'); }
+        function panicBot() { if(confirm('SISTEMA: PARAR TODAS AS NOVAS ENTRADAS?')) socket.emit('panic_button'); }
+        
+        // Keyboard Shortcuts
+        document.addEventListener('keydown', (e) => {
+            if(e.key === 'F5') { e.preventDefault(); if(!botActive) startBot(); }
+            if(e.key === 'Escape') { e.preventDefault(); stopBot(); }
+        });
+    </script>
+</body>
+</html>

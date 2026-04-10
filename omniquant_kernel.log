@@ -1,0 +1,578 @@
+2026-04-08 06:21:08,732 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+2026-04-08 06:21:08,733 [INFO] [33mPress CTRL+C to quit[0m
+2026-04-08 06:21:12,714 [INFO] 127.0.0.1 - - [08/Apr/2026 06:21:12] "GET / HTTP/1.1" 200 -
+2026-04-08 06:21:12,866 [INFO] 127.0.0.1 - - [08/Apr/2026 06:21:12] "GET / HTTP/1.1" 200 -
+2026-04-08 06:21:12,871 [INFO] 127.0.0.1 - - [08/Apr/2026 06:21:12] "GET /socket.io/?EIO=4&transport=polling&t=PriPLAa HTTP/1.1" 200 -
+2026-04-08 06:21:12,990 [INFO] 127.0.0.1 - - [08/Apr/2026 06:21:12] "GET /socket.io/?EIO=4&transport=polling&t=PriPLCR HTTP/1.1" 200 -
+2026-04-08 06:21:13,002 [INFO] 127.0.0.1 - - [08/Apr/2026 06:21:13] "GET /socket.io/?EIO=4&transport=polling&t=PriPLCZ&sid=QNrbJgvILUsfr9U5AAAB HTTP/1.1" 200 -
+2026-04-08 06:21:13,003 [INFO] 127.0.0.1 - - [08/Apr/2026 06:21:13] "POST /socket.io/?EIO=4&transport=polling&t=PriPLCY&sid=QNrbJgvILUsfr9U5AAAB HTTP/1.1" 200 -
+2026-04-08 06:21:13,010 [INFO] 127.0.0.1 - - [08/Apr/2026 06:21:13] "GET /socket.io/?EIO=4&transport=polling&t=PriPLCl&sid=QNrbJgvILUsfr9U5AAAB HTTP/1.1" 200 -
+2026-04-08 06:21:33,545 [ERROR] Warmup erro em BTC/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 06:21:33,548 [ERROR] Warmup erro em ETH/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 06:21:33,551 [ERROR] Warmup erro em SOL/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 06:21:33,554 [ERROR] Warmup erro em BNB/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 06:21:33,557 [ERROR] Warmup erro em XRP/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 06:21:33,560 [ERROR] Warmup erro em DOGE/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 06:21:33,562 [ERROR] Warmup erro em TRX/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 06:26:33,602 [INFO] Database backup created successfully.
+2026-04-08 06:31:21,334 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+2026-04-08 06:31:21,335 [INFO] [33mPress CTRL+C to quit[0m
+2026-04-08 06:31:24,349 [INFO] 127.0.0.1 - - [08/Apr/2026 06:31:24] "GET /socket.io/?EIO=4&transport=polling&t=PriRgSw HTTP/1.1" 200 -
+2026-04-08 06:31:24,360 [INFO] 127.0.0.1 - - [08/Apr/2026 06:31:24] "POST /socket.io/?EIO=4&transport=polling&t=PriRgT0&sid=qGqvXmsnJltMf3IoAAAA HTTP/1.1" 200 -
+2026-04-08 06:31:24,360 [INFO] 127.0.0.1 - - [08/Apr/2026 06:31:24] "GET /socket.io/?EIO=4&transport=polling&t=PriRgT3&sid=qGqvXmsnJltMf3IoAAAA HTTP/1.1" 200 -
+2026-04-08 06:31:50,566 [INFO] 127.0.0.1 - - [08/Apr/2026 06:31:50] "GET / HTTP/1.1" 200 -
+2026-04-08 06:31:50,578 [INFO] 127.0.0.1 - - [08/Apr/2026 06:31:50] "GET /socket.io/?EIO=4&transport=websocket&sid=qGqvXmsnJltMf3IoAAAA HTTP/1.1" 200 -
+2026-04-08 06:31:50,656 [INFO] 127.0.0.1 - - [08/Apr/2026 06:31:50] "GET /socket.io/?EIO=4&transport=polling&t=PriRmty HTTP/1.1" 200 -
+2026-04-08 06:31:50,673 [INFO] 127.0.0.1 - - [08/Apr/2026 06:31:50] "GET /socket.io/?EIO=4&transport=polling&t=PriRmuC&sid=1XTSlY3BjWlZ5K_iAAAC HTTP/1.1" 200 -
+2026-04-08 06:31:50,674 [INFO] 127.0.0.1 - - [08/Apr/2026 06:31:50] "POST /socket.io/?EIO=4&transport=polling&t=PriRmu9&sid=1XTSlY3BjWlZ5K_iAAAC HTTP/1.1" 200 -
+2026-04-08 06:31:50,705 [INFO] 127.0.0.1 - - [08/Apr/2026 06:31:50] "GET /socket.io/?EIO=4&transport=polling&t=PriRmuh&sid=1XTSlY3BjWlZ5K_iAAAC HTTP/1.1" 200 -
+2026-04-08 06:32:07,960 [ERROR] Warmup erro em BTC/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 06:32:07,963 [ERROR] Warmup erro em ETH/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 06:32:07,969 [ERROR] Warmup erro em SOL/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 06:32:07,972 [ERROR] Warmup erro em BNB/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 06:32:07,975 [ERROR] Warmup erro em XRP/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 06:32:07,979 [ERROR] Warmup erro em DOGE/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 06:32:07,982 [ERROR] Warmup erro em TRX/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 06:32:07,986 [ERROR] Warmup erro em LINK/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 06:32:07,988 [ERROR] Warmup erro em AVAX/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 06:32:07,992 [ERROR] Warmup erro em PEPE/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 06:32:08,002 [ERROR] Warmup erro em SHIB/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 06:32:08,007 [ERROR] Warmup erro em NEAR/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 06:32:08,015 [ERROR] Warmup erro em DOT/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 06:32:08,022 [ERROR] Warmup erro em ADA/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 06:35:00,884 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+2026-04-08 06:35:00,884 [INFO] [33mPress CTRL+C to quit[0m
+2026-04-08 06:35:03,802 [INFO] 127.0.0.1 - - [08/Apr/2026 06:35:03] "GET /socket.io/?EIO=4&transport=polling&t=PriSW1u HTTP/1.1" 200 -
+2026-04-08 06:35:03,809 [INFO] 127.0.0.1 - - [08/Apr/2026 06:35:03] "GET /socket.io/?EIO=4&transport=polling&t=PriSW1z&sid=qsyUOCFG6cfRB9GZAAAA HTTP/1.1" 200 -
+2026-04-08 06:35:03,811 [INFO] 127.0.0.1 - - [08/Apr/2026 06:35:03] "POST /socket.io/?EIO=4&transport=polling&t=PriSW1y&sid=qsyUOCFG6cfRB9GZAAAA HTTP/1.1" 200 -
+2026-04-08 06:36:00,803 [ERROR] Warmup erro em BTC/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 06:36:00,806 [ERROR] Warmup erro em ETH/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 06:36:00,809 [ERROR] Warmup erro em SOL/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 06:36:00,812 [ERROR] Warmup erro em BNB/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 06:36:00,816 [ERROR] Warmup erro em XRP/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 06:36:00,828 [ERROR] Warmup erro em DOGE/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 06:36:00,831 [ERROR] Warmup erro em TRX/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 06:36:00,835 [ERROR] Warmup erro em LINK/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 06:36:00,841 [ERROR] Warmup erro em AVAX/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 06:36:00,845 [ERROR] Warmup erro em PEPE/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 06:36:00,858 [ERROR] Warmup erro em SHIB/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 06:36:00,866 [ERROR] Warmup erro em NEAR/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 06:36:00,870 [ERROR] Warmup erro em DOT/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 06:36:00,876 [ERROR] Warmup erro em ADA/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 06:41:00,963 [INFO] Database backup created successfully.
+2026-04-08 07:03:11,174 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+2026-04-08 07:03:11,174 [INFO] [33mPress CTRL+C to quit[0m
+2026-04-08 07:03:22,342 [INFO] 127.0.0.1 - - [08/Apr/2026 07:03:22] "GET / HTTP/1.1" 200 -
+2026-04-08 07:03:22,743 [INFO] 127.0.0.1 - - [08/Apr/2026 07:03:22] "GET /socket.io/?EIO=4&transport=polling&t=PriY-pp HTTP/1.1" 200 -
+2026-04-08 07:03:22,795 [INFO] 127.0.0.1 - - [08/Apr/2026 07:03:22] "POST /socket.io/?EIO=4&transport=polling&t=PriY-qc&sid=WjSP9tqzelx9DpeAAAAA HTTP/1.1" 200 -
+2026-04-08 07:03:22,802 [INFO] 127.0.0.1 - - [08/Apr/2026 07:03:22] "GET /socket.io/?EIO=4&transport=polling&t=PriY-qg&sid=WjSP9tqzelx9DpeAAAAA HTTP/1.1" 200 -
+2026-04-08 07:03:22,811 [INFO] 127.0.0.1 - - [08/Apr/2026 07:03:22] "GET /socket.io/?EIO=4&transport=polling&t=PriY-qu&sid=WjSP9tqzelx9DpeAAAAA HTTP/1.1" 200 -
+2026-04-08 07:03:22,815 [INFO] 127.0.0.1 - - [08/Apr/2026 07:03:22] "GET /socket.io/?EIO=4&transport=polling&t=PriY-qz&sid=WjSP9tqzelx9DpeAAAAA HTTP/1.1" 200 -
+2026-04-08 07:03:28,302 [ERROR] Warmup erro em BTC/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 07:03:28,305 [ERROR] Warmup erro em ETH/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 07:03:28,307 [ERROR] Warmup erro em SOL/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 07:03:28,310 [ERROR] Warmup erro em BNB/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 07:03:28,312 [ERROR] Warmup erro em XRP/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 07:03:28,314 [ERROR] Warmup erro em DOGE/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 07:03:28,317 [ERROR] Warmup erro em TRX/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 07:03:28,320 [ERROR] Warmup erro em LINK/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 07:03:28,322 [ERROR] Warmup erro em AVAX/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 07:03:28,325 [ERROR] Warmup erro em PEPE/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 07:03:28,328 [ERROR] Warmup erro em SHIB/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 07:03:28,331 [ERROR] Warmup erro em NEAR/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 07:03:28,334 [ERROR] Warmup erro em DOT/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 07:03:28,336 [ERROR] Warmup erro em ADA/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 07:03:49,655 [ERROR] Warmup erro em BTC/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 07:03:49,657 [ERROR] Warmup erro em ETH/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 07:03:49,660 [ERROR] Warmup erro em SOL/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 07:03:49,662 [ERROR] Warmup erro em BNB/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 07:03:49,665 [ERROR] Warmup erro em XRP/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 07:03:49,667 [ERROR] Warmup erro em DOGE/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 07:03:49,669 [ERROR] Warmup erro em TRX/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 07:03:49,671 [ERROR] Warmup erro em LINK/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 07:03:49,674 [ERROR] Warmup erro em AVAX/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 07:03:49,677 [ERROR] Warmup erro em PEPE/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 07:03:49,679 [ERROR] Warmup erro em SHIB/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 07:03:49,681 [ERROR] Warmup erro em NEAR/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 07:03:49,684 [ERROR] Warmup erro em DOT/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 07:03:49,687 [ERROR] Warmup erro em ADA/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 07:04:55,808 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+2026-04-08 07:04:55,808 [INFO] [33mPress CTRL+C to quit[0m
+2026-04-08 07:04:55,964 [INFO] 127.0.0.1 - - [08/Apr/2026 07:04:55] "GET /socket.io/?EIO=4&transport=polling&t=PriZL4v HTTP/1.1" 200 -
+2026-04-08 07:04:55,971 [INFO] 127.0.0.1 - - [08/Apr/2026 07:04:55] "GET /socket.io/?EIO=4&transport=polling&t=PriZLaV&sid=lpaKqTzpRIS2GTiMAAAA HTTP/1.1" 200 -
+2026-04-08 07:04:55,971 [INFO] 127.0.0.1 - - [08/Apr/2026 07:04:55] "POST /socket.io/?EIO=4&transport=polling&t=PriZLaU&sid=lpaKqTzpRIS2GTiMAAAA HTTP/1.1" 200 -
+2026-04-08 07:05:00,388 [INFO] 127.0.0.1 - - [08/Apr/2026 07:05:00] "GET / HTTP/1.1" 200 -
+2026-04-08 07:05:00,393 [INFO] 127.0.0.1 - - [08/Apr/2026 07:05:00] "GET /socket.io/?EIO=4&transport=websocket&sid=lpaKqTzpRIS2GTiMAAAA HTTP/1.1" 200 -
+2026-04-08 07:05:00,513 [INFO] 127.0.0.1 - - [08/Apr/2026 07:05:00] "GET /socket.io/?EIO=4&transport=polling&t=PriZMhU HTTP/1.1" 200 -
+2026-04-08 07:05:00,522 [INFO] 127.0.0.1 - - [08/Apr/2026 07:05:00] "GET /socket.io/?EIO=4&transport=polling&t=PriZMhb&sid=Dru6uDNfV0B2fpmfAAAC HTTP/1.1" 200 -
+2026-04-08 07:05:00,524 [INFO] 127.0.0.1 - - [08/Apr/2026 07:05:00] "POST /socket.io/?EIO=4&transport=polling&t=PriZMha&sid=Dru6uDNfV0B2fpmfAAAC HTTP/1.1" 200 -
+2026-04-08 07:05:02,361 [ERROR] Warmup erro em BTC/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 07:05:02,365 [ERROR] Warmup erro em ETH/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 07:05:02,368 [ERROR] Warmup erro em SOL/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 07:05:02,370 [ERROR] Warmup erro em BNB/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 07:05:02,373 [ERROR] Warmup erro em XRP/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 07:05:02,375 [ERROR] Warmup erro em DOGE/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 07:05:02,378 [ERROR] Warmup erro em TRX/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 07:05:02,382 [ERROR] Warmup erro em LINK/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 07:05:02,385 [ERROR] Warmup erro em AVAX/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 07:05:02,387 [ERROR] Warmup erro em PEPE/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 07:05:02,390 [ERROR] Warmup erro em SHIB/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 07:05:02,392 [ERROR] Warmup erro em NEAR/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 07:05:02,394 [ERROR] Warmup erro em DOT/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 07:05:02,397 [ERROR] Warmup erro em ADA/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 07:05:16,258 [INFO] 127.0.0.1 - - [08/Apr/2026 07:05:16] "GET /socket.io/?transport=polling&EIO=4&t=1775642716.2553382 HTTP/1.1" 200 -
+2026-04-08 07:05:21,266 [INFO] 127.0.0.1 - - [08/Apr/2026 07:05:21] "GET /socket.io/?transport=websocket&EIO=4&sid=8-kHayHuekHtiWHGAAAE&t=1775642716.2593262 HTTP/1.1" 200 -
+2026-04-08 07:10:37,821 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+2026-04-08 07:10:37,821 [INFO] [33mPress CTRL+C to quit[0m
+2026-04-08 07:10:38,605 [INFO] 127.0.0.1 - - [08/Apr/2026 07:10:38] "GET / HTTP/1.1" 200 -
+2026-04-08 07:10:38,612 [INFO] 127.0.0.1 - - [08/Apr/2026 07:10:38] "GET /socket.io/?EIO=4&transport=websocket&sid=Dru6uDNfV0B2fpmfAAAC HTTP/1.1" 200 -
+2026-04-08 07:10:38,716 [INFO] 127.0.0.1 - - [08/Apr/2026 07:10:38] "GET /socket.io/?EIO=4&transport=polling&t=PriafFw HTTP/1.1" 200 -
+2026-04-08 07:10:38,737 [INFO] 127.0.0.1 - - [08/Apr/2026 07:10:38] "POST /socket.io/?EIO=4&transport=polling&t=PriafG2&sid=d8wyHOAeZefEBw9LAAAG HTTP/1.1" 200 -
+2026-04-08 07:10:38,737 [INFO] 127.0.0.1 - - [08/Apr/2026 07:10:38] "GET /socket.io/?EIO=4&transport=polling&t=PriafG3&sid=d8wyHOAeZefEBw9LAAAG HTTP/1.1" 200 -
+2026-04-08 07:10:38,747 [INFO] 127.0.0.1 - - [08/Apr/2026 07:10:38] "POST /socket.io/?EIO=4&transport=polling&t=PriafGL&sid=d8wyHOAeZefEBw9LAAAG HTTP/1.1" 200 -
+2026-04-08 07:10:38,750 [INFO] 127.0.0.1 - - [08/Apr/2026 07:10:38] "GET /socket.io/?EIO=4&transport=polling&t=PriafGK&sid=d8wyHOAeZefEBw9LAAAG HTTP/1.1" 200 -
+2026-04-08 07:10:39,267 [INFO] 127.0.0.1 - - [08/Apr/2026 07:10:39] "GET / HTTP/1.1" 200 -
+2026-04-08 07:10:39,271 [INFO] 127.0.0.1 - - [08/Apr/2026 07:10:39] "GET /socket.io/?EIO=4&transport=websocket&sid=d8wyHOAeZefEBw9LAAAG HTTP/1.1" 200 -
+2026-04-08 07:10:39,327 [INFO] 127.0.0.1 - - [08/Apr/2026 07:10:39] "GET /socket.io/?EIO=4&transport=polling&t=PriafPS HTTP/1.1" 200 -
+2026-04-08 07:10:39,336 [INFO] 127.0.0.1 - - [08/Apr/2026 07:10:39] "GET /socket.io/?EIO=4&transport=polling&t=PriafPa.0&sid=LQzZYkh8baCHMD_AAAAI HTTP/1.1" 200 -
+2026-04-08 07:10:39,337 [INFO] 127.0.0.1 - - [08/Apr/2026 07:10:39] "POST /socket.io/?EIO=4&transport=polling&t=PriafPa&sid=LQzZYkh8baCHMD_AAAAI HTTP/1.1" 200 -
+2026-04-08 07:10:39,742 [INFO] 127.0.0.1 - - [08/Apr/2026 07:10:39] "GET / HTTP/1.1" 200 -
+2026-04-08 07:10:39,747 [INFO] 127.0.0.1 - - [08/Apr/2026 07:10:39] "GET /socket.io/?EIO=4&transport=websocket&sid=LQzZYkh8baCHMD_AAAAI HTTP/1.1" 200 -
+2026-04-08 07:10:39,836 [INFO] 127.0.0.1 - - [08/Apr/2026 07:10:39] "GET /socket.io/?EIO=4&transport=polling&t=PriafXN HTTP/1.1" 200 -
+2026-04-08 07:10:39,858 [INFO] 127.0.0.1 - - [08/Apr/2026 07:10:39] "GET /socket.io/?EIO=4&transport=polling&t=PriafXk&sid=nr5FAAcJnugfOMsNAAAK HTTP/1.1" 200 -
+2026-04-08 07:10:39,860 [INFO] 127.0.0.1 - - [08/Apr/2026 07:10:39] "POST /socket.io/?EIO=4&transport=polling&t=PriafXj&sid=nr5FAAcJnugfOMsNAAAK HTTP/1.1" 200 -
+2026-04-08 07:10:40,321 [INFO] 127.0.0.1 - - [08/Apr/2026 07:10:40] "GET / HTTP/1.1" 200 -
+2026-04-08 07:10:40,325 [INFO] 127.0.0.1 - - [08/Apr/2026 07:10:40] "GET /socket.io/?EIO=4&transport=websocket&sid=nr5FAAcJnugfOMsNAAAK HTTP/1.1" 200 -
+2026-04-08 07:10:40,381 [INFO] 127.0.0.1 - - [08/Apr/2026 07:10:40] "GET /socket.io/?EIO=4&transport=polling&t=Priaffw HTTP/1.1" 200 -
+2026-04-08 07:10:40,390 [INFO] 127.0.0.1 - - [08/Apr/2026 07:10:40] "GET /socket.io/?EIO=4&transport=polling&t=Priafg2.0&sid=jvLz0s3c-pVgV8ktAAAM HTTP/1.1" 200 -
+2026-04-08 07:10:40,391 [INFO] 127.0.0.1 - - [08/Apr/2026 07:10:40] "POST /socket.io/?EIO=4&transport=polling&t=Priafg2&sid=jvLz0s3c-pVgV8ktAAAM HTTP/1.1" 200 -
+2026-04-08 07:10:41,015 [INFO] 127.0.0.1 - - [08/Apr/2026 07:10:41] "GET / HTTP/1.1" 200 -
+2026-04-08 07:10:41,019 [INFO] 127.0.0.1 - - [08/Apr/2026 07:10:41] "GET /socket.io/?EIO=4&transport=websocket&sid=jvLz0s3c-pVgV8ktAAAM HTTP/1.1" 200 -
+2026-04-08 07:10:41,073 [INFO] 127.0.0.1 - - [08/Apr/2026 07:10:41] "GET /socket.io/?EIO=4&transport=polling&t=Priafqk HTTP/1.1" 200 -
+2026-04-08 07:10:41,081 [INFO] 127.0.0.1 - - [08/Apr/2026 07:10:41] "GET /socket.io/?EIO=4&transport=polling&t=Priafqr.0&sid=XopijSG3ATWrFCdgAAAO HTTP/1.1" 200 -
+2026-04-08 07:10:41,083 [INFO] 127.0.0.1 - - [08/Apr/2026 07:10:41] "POST /socket.io/?EIO=4&transport=polling&t=Priafqr&sid=XopijSG3ATWrFCdgAAAO HTTP/1.1" 200 -
+2026-04-08 07:10:41,588 [INFO] 127.0.0.1 - - [08/Apr/2026 07:10:41] "GET / HTTP/1.1" 200 -
+2026-04-08 07:10:41,591 [INFO] 127.0.0.1 - - [08/Apr/2026 07:10:41] "GET /socket.io/?EIO=4&transport=websocket&sid=XopijSG3ATWrFCdgAAAO HTTP/1.1" 200 -
+2026-04-08 07:10:41,672 [INFO] 127.0.0.1 - - [08/Apr/2026 07:10:41] "GET /socket.io/?EIO=4&transport=polling&t=Priaf-3 HTTP/1.1" 200 -
+2026-04-08 07:10:41,680 [INFO] 127.0.0.1 - - [08/Apr/2026 07:10:41] "POST /socket.io/?EIO=4&transport=polling&t=Priaf-C&sid=2z335W7eH4ACBQ3ZAAAQ HTTP/1.1" 200 -
+2026-04-08 07:10:41,684 [INFO] 127.0.0.1 - - [08/Apr/2026 07:10:41] "GET /socket.io/?EIO=4&transport=polling&t=Priaf-C.0&sid=2z335W7eH4ACBQ3ZAAAQ HTTP/1.1" 200 -
+2026-04-08 07:10:41,695 [INFO] 127.0.0.1 - - [08/Apr/2026 07:10:41] "GET /socket.io/?EIO=4&transport=polling&t=Priaf-T&sid=2z335W7eH4ACBQ3ZAAAQ HTTP/1.1" 200 -
+2026-04-08 07:10:46,689 [INFO] 127.0.0.1 - - [08/Apr/2026 07:10:46] "GET /socket.io/?transport=polling&EIO=4&t=1775643046.6770744 HTTP/1.1" 200 -
+2026-04-08 07:10:51,720 [INFO] 127.0.0.1 - - [08/Apr/2026 07:10:51] "GET /socket.io/?transport=websocket&EIO=4&sid=E_V4q1VCuVfsWEVlAAAS&t=1775643046.6901145 HTTP/1.1" 200 -
+2026-04-08 07:12:37,125 [ERROR] Warmup erro em BTC/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 07:12:37,127 [ERROR] Warmup erro em ETH/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 07:12:37,129 [ERROR] Warmup erro em SOL/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 07:12:37,131 [ERROR] Warmup erro em BNB/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 07:12:37,133 [ERROR] Warmup erro em XRP/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 07:12:37,136 [ERROR] Warmup erro em DOGE/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 07:12:37,138 [ERROR] Warmup erro em TRX/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 07:12:37,140 [ERROR] Warmup erro em LINK/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 07:12:37,142 [ERROR] Warmup erro em AVAX/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 07:12:37,144 [ERROR] Warmup erro em PEPE/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 07:12:37,146 [ERROR] Warmup erro em SHIB/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 07:12:37,150 [ERROR] Warmup erro em NEAR/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 07:12:37,152 [ERROR] Warmup erro em DOT/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 07:12:37,155 [ERROR] Warmup erro em ADA/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 07:14:18,878 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+2026-04-08 07:14:18,879 [INFO] [33mPress CTRL+C to quit[0m
+2026-04-08 07:14:24,911 [INFO] 127.0.0.1 - - [08/Apr/2026 07:14:24] "GET / HTTP/1.1" 200 -
+2026-04-08 07:14:25,090 [INFO] 127.0.0.1 - - [08/Apr/2026 07:14:25] "GET /socket.io/?EIO=4&transport=polling&t=PribWW- HTTP/1.1" 200 -
+2026-04-08 07:14:25,142 [INFO] 127.0.0.1 - - [08/Apr/2026 07:14:25] "POST /socket.io/?EIO=4&transport=polling&t=PribWXm&sid=8GKFlTBD4adpNn1yAAAA HTTP/1.1" 200 -
+2026-04-08 07:14:25,142 [INFO] 127.0.0.1 - - [08/Apr/2026 07:14:25] "GET /socket.io/?EIO=4&transport=polling&t=PribWXm.0&sid=8GKFlTBD4adpNn1yAAAA HTTP/1.1" 200 -
+2026-04-08 07:14:25,152 [INFO] 127.0.0.1 - - [08/Apr/2026 07:14:25] "GET /socket.io/?EIO=4&transport=polling&t=PribWX-&sid=8GKFlTBD4adpNn1yAAAA HTTP/1.1" 200 -
+2026-04-08 07:14:25,154 [INFO] 127.0.0.1 - - [08/Apr/2026 07:14:25] "POST /socket.io/?EIO=4&transport=polling&t=PribWX-.0&sid=8GKFlTBD4adpNn1yAAAA HTTP/1.1" 200 -
+2026-04-08 07:14:25,167 [INFO] 127.0.0.1 - - [08/Apr/2026 07:14:25] "GET /socket.io/?EIO=4&transport=polling&t=PribWYC&sid=8GKFlTBD4adpNn1yAAAA HTTP/1.1" 200 -
+2026-04-08 07:14:38,783 [INFO] 127.0.0.1 - - [08/Apr/2026 07:14:38] "GET /socket.io/?transport=polling&EIO=4&t=1775643278.7610958 HTTP/1.1" 200 -
+2026-04-08 07:14:39,118 [INFO] 127.0.0.1 - - [08/Apr/2026 07:14:39] "GET /socket.io/?transport=websocket&EIO=4&sid=GyDtJqjK3-LBhWYjAAAC&t=1775643278.7848804 HTTP/1.1" 200 -
+2026-04-08 07:14:52,091 [INFO] 127.0.0.1 - - [08/Apr/2026 07:14:52] "GET / HTTP/1.1" 200 -
+2026-04-08 07:14:52,288 [INFO] 127.0.0.1 - - [08/Apr/2026 07:14:52] "GET /socket.io/?EIO=4&transport=polling&t=Pribd9z HTTP/1.1" 200 -
+2026-04-08 07:14:52,340 [INFO] 127.0.0.1 - - [08/Apr/2026 07:14:52] "POST /socket.io/?EIO=4&transport=polling&t=PribdAe&sid=NY57C16XRdRB9ODMAAAE HTTP/1.1" 200 -
+2026-04-08 07:14:52,341 [INFO] 127.0.0.1 - - [08/Apr/2026 07:14:52] "GET /socket.io/?EIO=4&transport=polling&t=PribdAf&sid=NY57C16XRdRB9ODMAAAE HTTP/1.1" 200 -
+2026-04-08 07:14:52,355 [INFO] 127.0.0.1 - - [08/Apr/2026 07:14:52] "GET /socket.io/?EIO=4&transport=polling&t=PribdA_&sid=NY57C16XRdRB9ODMAAAE HTTP/1.1" 200 -
+2026-04-08 07:14:52,356 [INFO] 127.0.0.1 - - [08/Apr/2026 07:14:52] "POST /socket.io/?EIO=4&transport=polling&t=PribdB0&sid=NY57C16XRdRB9ODMAAAE HTTP/1.1" 200 -
+2026-04-08 07:14:52,372 [INFO] 127.0.0.1 - - [08/Apr/2026 07:14:52] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-08 07:16:10,162 [INFO] 127.0.0.1 - - [08/Apr/2026 07:16:10] "GET / HTTP/1.1" 200 -
+2026-04-08 07:16:10,166 [INFO] 127.0.0.1 - - [08/Apr/2026 07:16:10] "GET /socket.io/?EIO=4&transport=websocket&sid=8GKFlTBD4adpNn1yAAAA HTTP/1.1" 200 -
+2026-04-08 07:16:10,293 [INFO] 127.0.0.1 - - [08/Apr/2026 07:16:10] "GET /socket.io/?EIO=4&transport=polling&t=PribwCp HTTP/1.1" 200 -
+2026-04-08 07:16:10,304 [INFO] 127.0.0.1 - - [08/Apr/2026 07:16:10] "GET /socket.io/?EIO=4&transport=polling&t=PribwCw&sid=BiMFPn2XrTGbKHIDAAAG HTTP/1.1" 200 -
+2026-04-08 07:16:10,304 [INFO] 127.0.0.1 - - [08/Apr/2026 07:16:10] "POST /socket.io/?EIO=4&transport=polling&t=PribwCv&sid=BiMFPn2XrTGbKHIDAAAG HTTP/1.1" 200 -
+2026-04-08 07:20:56,850 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+2026-04-08 07:20:56,850 [INFO] [33mPress CTRL+C to quit[0m
+2026-04-08 07:20:57,471 [INFO] 127.0.0.1 - - [08/Apr/2026 07:20:57] "GET /socket.io/?EIO=4&transport=polling&t=Prid0Jy HTTP/1.1" 200 -
+2026-04-08 07:20:57,476 [INFO] 127.0.0.1 - - [08/Apr/2026 07:20:57] "GET /socket.io/?EIO=4&transport=polling&t=Prid0K1&sid=U6eZt7GSokfnmpiTAAAA HTTP/1.1" 200 -
+2026-04-08 07:20:57,478 [INFO] 127.0.0.1 - - [08/Apr/2026 07:20:57] "POST /socket.io/?EIO=4&transport=polling&t=Prid0K0&sid=U6eZt7GSokfnmpiTAAAA HTTP/1.1" 200 -
+2026-04-08 07:20:59,900 [INFO] 127.0.0.1 - - [08/Apr/2026 07:20:59] "GET /socket.io/?EIO=4&transport=polling&t=Prid0vw HTTP/1.1" 200 -
+2026-04-08 07:20:59,905 [INFO] 127.0.0.1 - - [08/Apr/2026 07:20:59] "GET /socket.io/?EIO=4&transport=polling&t=Prid0v-.0&sid=aZT2wVvF7qBVr-leAAAC HTTP/1.1" 200 -
+2026-04-08 07:20:59,907 [INFO] 127.0.0.1 - - [08/Apr/2026 07:20:59] "POST /socket.io/?EIO=4&transport=polling&t=Prid0v-&sid=aZT2wVvF7qBVr-leAAAC HTTP/1.1" 200 -
+2026-04-08 07:20:59,972 [INFO] 127.0.0.1 - - [08/Apr/2026 07:20:59] "GET / HTTP/1.1" 200 -
+2026-04-08 07:20:59,979 [INFO] 127.0.0.1 - - [08/Apr/2026 07:20:59] "GET /socket.io/?EIO=4&transport=websocket&sid=U6eZt7GSokfnmpiTAAAA HTTP/1.1" 200 -
+2026-04-08 07:21:00,163 [INFO] 127.0.0.1 - - [08/Apr/2026 07:21:00] "GET /socket.io/?EIO=4&transport=polling&t=Prid0-0 HTTP/1.1" 200 -
+2026-04-08 07:21:00,172 [INFO] 127.0.0.1 - - [08/Apr/2026 07:21:00] "GET /socket.io/?EIO=4&transport=polling&t=Prid0-8&sid=e8emaQXSEYMnModYAAAE HTTP/1.1" 200 -
+2026-04-08 07:21:00,173 [INFO] 127.0.0.1 - - [08/Apr/2026 07:21:00] "POST /socket.io/?EIO=4&transport=polling&t=Prid0-7&sid=e8emaQXSEYMnModYAAAE HTTP/1.1" 200 -
+2026-04-08 07:21:02,571 [ERROR] Warmup erro em BTC/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 07:21:02,575 [ERROR] Warmup erro em ETH/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 07:21:02,578 [ERROR] Warmup erro em SOL/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 07:21:02,581 [ERROR] Warmup erro em BNB/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 07:21:02,587 [ERROR] Warmup erro em XRP/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 07:21:02,590 [ERROR] Warmup erro em DOGE/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 07:21:02,594 [ERROR] Warmup erro em TRX/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 07:21:02,597 [ERROR] Warmup erro em LINK/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 07:21:02,599 [ERROR] Warmup erro em AVAX/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 07:21:02,602 [ERROR] Warmup erro em PEPE/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 07:21:02,605 [ERROR] Warmup erro em SHIB/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 07:21:02,608 [ERROR] Warmup erro em NEAR/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 07:21:02,611 [ERROR] Warmup erro em DOT/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 07:21:02,614 [ERROR] Warmup erro em ADA/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 07:21:15,249 [INFO] 127.0.0.1 - - [08/Apr/2026 07:21:15] "GET /socket.io/?transport=polling&EIO=4&t=1775643675.2366052 HTTP/1.1" 200 -
+2026-04-08 07:21:20,280 [INFO] 127.0.0.1 - - [08/Apr/2026 07:21:20] "GET /socket.io/?transport=websocket&EIO=4&sid=SC7PL6RDMcZKJVq0AAAG&t=1775643675.2504933 HTTP/1.1" 200 -
+2026-04-08 07:26:02,650 [INFO] Database backup created successfully.
+2026-04-08 07:26:08,086 [ERROR] Warmup erro em BTC/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 07:26:08,089 [ERROR] Warmup erro em ETH/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 07:26:08,092 [ERROR] Warmup erro em SOL/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 07:26:08,096 [ERROR] Warmup erro em BNB/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 07:26:08,100 [ERROR] Warmup erro em XRP/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 07:26:08,103 [ERROR] Warmup erro em DOGE/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 07:26:08,106 [ERROR] Warmup erro em TRX/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 07:26:08,110 [ERROR] Warmup erro em LINK/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 07:26:08,113 [ERROR] Warmup erro em AVAX/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 07:26:08,116 [ERROR] Warmup erro em PEPE/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 07:26:08,118 [ERROR] Warmup erro em SHIB/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 07:26:08,122 [ERROR] Warmup erro em NEAR/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 07:26:08,125 [ERROR] Warmup erro em DOT/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 07:26:08,128 [ERROR] Warmup erro em ADA/USDT: Cannot connect to host api.binance.com:443 ssl:default [Could not contact DNS servers]
+2026-04-08 07:26:48,425 [INFO] 127.0.0.1 - - [08/Apr/2026 07:26:48] "GET / HTTP/1.1" 200 -
+2026-04-08 07:26:48,432 [INFO] 127.0.0.1 - - [08/Apr/2026 07:26:48] "GET /socket.io/?EIO=4&transport=websocket&sid=e8emaQXSEYMnModYAAAE HTTP/1.1" 200 -
+2026-04-08 07:26:48,507 [INFO] 127.0.0.1 - - [08/Apr/2026 07:26:48] "GET /socket.io/?EIO=4&transport=polling&t=PrieM0v HTTP/1.1" 200 -
+2026-04-08 07:26:48,518 [INFO] 127.0.0.1 - - [08/Apr/2026 07:26:48] "GET /socket.io/?EIO=4&transport=polling&t=PrieM11&sid=STjQtx0H1LUKS_2NAAAI HTTP/1.1" 200 -
+2026-04-08 07:26:48,520 [INFO] 127.0.0.1 - - [08/Apr/2026 07:26:48] "POST /socket.io/?EIO=4&transport=polling&t=PrieM10&sid=STjQtx0H1LUKS_2NAAAI HTTP/1.1" 200 -
+2026-04-08 07:31:08,132 [INFO] Database backup created successfully.
+2026-04-08 07:31:46,025 [INFO] 127.0.0.1 - - [08/Apr/2026 07:31:46] "GET / HTTP/1.1" 200 -
+2026-04-08 07:31:46,029 [INFO] 127.0.0.1 - - [08/Apr/2026 07:31:46] "GET /socket.io/?EIO=4&transport=websocket&sid=aZT2wVvF7qBVr-leAAAC HTTP/1.1" 200 -
+2026-04-08 07:31:46,165 [INFO] 127.0.0.1 - - [08/Apr/2026 07:31:46] "GET /socket.io/?EIO=4&transport=polling&t=PrifUhj HTTP/1.1" 200 -
+2026-04-08 07:31:46,183 [INFO] 127.0.0.1 - - [08/Apr/2026 07:31:46] "POST /socket.io/?EIO=4&transport=polling&t=PrifUi1&sid=Kngtv4OFX8bmV33BAAAK HTTP/1.1" 200 -
+2026-04-08 07:31:46,187 [INFO] 127.0.0.1 - - [08/Apr/2026 07:31:46] "GET /socket.io/?EIO=4&transport=polling&t=PrifUi2&sid=Kngtv4OFX8bmV33BAAAK HTTP/1.1" 200 -
+2026-04-08 07:32:01,704 [INFO] 127.0.0.1 - - [08/Apr/2026 07:32:01] "GET /socket.io/?EIO=4&transport=websocket&sid=Kngtv4OFX8bmV33BAAAK HTTP/1.1" 200 -
+2026-04-08 07:36:08,143 [INFO] Database backup created successfully.
+2026-04-08 07:41:08,162 [INFO] Database backup created successfully.
+2026-04-08 07:46:08,175 [INFO] Database backup created successfully.
+2026-04-08 07:51:08,198 [INFO] Database backup created successfully.
+2026-04-08 07:56:08,220 [INFO] Database backup created successfully.
+2026-04-08 08:01:08,232 [INFO] Database backup created successfully.
+2026-04-08 08:06:08,249 [INFO] Database backup created successfully.
+2026-04-08 08:11:08,270 [INFO] Database backup created successfully.
+2026-04-08 08:16:08,280 [INFO] Database backup created successfully.
+2026-04-08 08:21:08,302 [INFO] Database backup created successfully.
+2026-04-08 08:26:08,314 [INFO] Database backup created successfully.
+2026-04-08 08:31:08,338 [INFO] Database backup created successfully.
+2026-04-08 08:36:08,353 [INFO] Database backup created successfully.
+2026-04-08 08:41:08,367 [INFO] Database backup created successfully.
+2026-04-08 08:46:08,378 [INFO] Database backup created successfully.
+2026-04-08 08:51:08,403 [INFO] Database backup created successfully.
+2026-04-08 08:56:08,426 [INFO] Database backup created successfully.
+2026-04-08 09:01:08,436 [INFO] Database backup created successfully.
+2026-04-08 09:06:08,451 [INFO] Database backup created successfully.
+2026-04-08 09:11:08,470 [INFO] Database backup created successfully.
+2026-04-08 09:16:08,495 [INFO] Database backup created successfully.
+2026-04-08 09:21:08,519 [INFO] Database backup created successfully.
+2026-04-08 09:26:08,534 [INFO] Database backup created successfully.
+2026-04-08 09:31:08,556 [INFO] Database backup created successfully.
+2026-04-08 09:36:08,577 [INFO] Database backup created successfully.
+2026-04-08 09:41:08,591 [INFO] Database backup created successfully.
+2026-04-08 09:46:08,607 [INFO] Database backup created successfully.
+2026-04-08 09:51:08,630 [INFO] Database backup created successfully.
+2026-04-08 09:56:08,656 [INFO] Database backup created successfully.
+2026-04-08 10:01:08,681 [INFO] Database backup created successfully.
+2026-04-08 10:06:08,703 [INFO] Database backup created successfully.
+2026-04-08 10:11:08,715 [INFO] Database backup created successfully.
+2026-04-08 10:16:08,725 [INFO] Database backup created successfully.
+2026-04-08 10:21:08,738 [INFO] Database backup created successfully.
+2026-04-08 10:26:08,751 [INFO] Database backup created successfully.
+2026-04-08 10:31:08,775 [INFO] Database backup created successfully.
+2026-04-08 10:36:08,788 [INFO] Database backup created successfully.
+2026-04-08 10:41:08,804 [INFO] Database backup created successfully.
+2026-04-08 10:46:08,818 [INFO] Database backup created successfully.
+2026-04-08 10:51:08,831 [INFO] Database backup created successfully.
+2026-04-08 10:56:08,855 [INFO] Database backup created successfully.
+2026-04-08 11:01:08,874 [INFO] Database backup created successfully.
+2026-04-08 11:06:08,894 [INFO] Database backup created successfully.
+2026-04-08 11:11:08,909 [INFO] Database backup created successfully.
+2026-04-08 11:16:08,918 [INFO] Database backup created successfully.
+2026-04-08 11:21:08,932 [INFO] Database backup created successfully.
+2026-04-08 11:26:08,944 [INFO] Database backup created successfully.
+2026-04-08 11:31:08,961 [INFO] Database backup created successfully.
+2026-04-08 11:36:08,971 [INFO] Database backup created successfully.
+2026-04-08 11:41:08,988 [INFO] Database backup created successfully.
+2026-04-08 11:46:09,003 [INFO] Database backup created successfully.
+2026-04-08 11:51:09,030 [INFO] Database backup created successfully.
+2026-04-08 11:55:14,833 [INFO] 127.0.0.1 - - [08/Apr/2026 11:55:14] "GET / HTTP/1.1" 200 -
+2026-04-08 11:55:14,843 [INFO] 127.0.0.1 - - [08/Apr/2026 11:55:14] "GET /socket.io/?EIO=4&transport=websocket&sid=STjQtx0H1LUKS_2NAAAI HTTP/1.1" 200 -
+2026-04-08 11:55:15,133 [INFO] 127.0.0.1 - - [08/Apr/2026 11:55:15] "GET /socket.io/?EIO=4&transport=polling&t=PrjboIx HTTP/1.1" 200 -
+2026-04-08 11:55:15,142 [INFO] 127.0.0.1 - - [08/Apr/2026 11:55:15] "POST /socket.io/?EIO=4&transport=polling&t=PrjboJ1&sid=X8BXeblbKhy77WliAAAM HTTP/1.1" 200 -
+2026-04-08 11:55:15,144 [INFO] 127.0.0.1 - - [08/Apr/2026 11:55:15] "GET /socket.io/?EIO=4&transport=polling&t=PrjboJ2&sid=X8BXeblbKhy77WliAAAM HTTP/1.1" 200 -
+2026-04-09 23:12:38,719 [WARNING] Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+2026-04-09 23:12:38,730 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+2026-04-09 23:12:38,730 [INFO] [33mPress CTRL+C to quit[0m
+2026-04-09 23:13:07,020 [INFO] 127.0.0.1 - - [09/Apr/2026 23:13:07] "GET / HTTP/1.1" 200 -
+2026-04-09 23:13:07,291 [INFO] 127.0.0.1 - - [09/Apr/2026 23:13:07] "GET /socket.io/?EIO=4&transport=polling&t=PrrAXnO HTTP/1.1" 200 -
+2026-04-09 23:13:07,348 [INFO] 127.0.0.1 - - [09/Apr/2026 23:13:07] "GET /socket.io/?EIO=4&transport=polling&t=PrrAXo4&sid=upf_45D8dJVbqxm0AAAA HTTP/1.1" 200 -
+2026-04-09 23:13:07,368 [INFO] 127.0.0.1 - - [09/Apr/2026 23:13:07] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-09 23:13:07,409 [INFO] 127.0.0.1 - - [09/Apr/2026 23:13:07] "POST /socket.io/?EIO=4&transport=polling&t=PrrAXo3&sid=upf_45D8dJVbqxm0AAAA HTTP/1.1" 200 -
+2026-04-09 23:16:47,118 [WARNING] Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+2026-04-09 23:16:47,127 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+2026-04-09 23:16:47,127 [INFO] [33mPress CTRL+C to quit[0m
+2026-04-09 23:16:48,315 [INFO] 127.0.0.1 - - [09/Apr/2026 23:16:48] "GET /socket.io/?EIO=4&transport=polling&t=PrrBNku HTTP/1.1" 200 -
+2026-04-09 23:16:48,321 [INFO] 127.0.0.1 - - [09/Apr/2026 23:16:48] "GET /socket.io/?EIO=4&transport=polling&t=PrrBNkz&sid=w_-SZ5xttOs3YF4zAAAA HTTP/1.1" 200 -
+2026-04-09 23:16:48,334 [INFO] 127.0.0.1 - - [09/Apr/2026 23:16:48] "POST /socket.io/?EIO=4&transport=polling&t=PrrBNky&sid=w_-SZ5xttOs3YF4zAAAA HTTP/1.1" 200 -
+2026-04-09 23:16:54,360 [INFO] 127.0.0.1 - - [09/Apr/2026 23:16:54] "GET / HTTP/1.1" 200 -
+2026-04-09 23:16:54,366 [INFO] 127.0.0.1 - - [09/Apr/2026 23:16:54] "GET /socket.io/?EIO=4&transport=websocket&sid=w_-SZ5xttOs3YF4zAAAA HTTP/1.1" 200 -
+2026-04-09 23:16:54,497 [INFO] 127.0.0.1 - - [09/Apr/2026 23:16:54] "GET /socket.io/?EIO=4&transport=polling&t=PrrBPFV HTTP/1.1" 200 -
+2026-04-09 23:16:54,510 [INFO] 127.0.0.1 - - [09/Apr/2026 23:16:54] "GET /socket.io/?EIO=4&transport=polling&t=PrrBPFe&sid=F-sg0zFEB-P6HMixAAAC HTTP/1.1" 200 -
+2026-04-09 23:16:54,510 [INFO] 127.0.0.1 - - [09/Apr/2026 23:16:54] "POST /socket.io/?EIO=4&transport=polling&t=PrrBPFd&sid=F-sg0zFEB-P6HMixAAAC HTTP/1.1" 200 -
+2026-04-09 23:16:55,004 [INFO] 127.0.0.1 - - [09/Apr/2026 23:16:55] "GET / HTTP/1.1" 200 -
+2026-04-09 23:16:55,011 [INFO] 127.0.0.1 - - [09/Apr/2026 23:16:55] "GET /socket.io/?EIO=4&transport=websocket&sid=F-sg0zFEB-P6HMixAAAC HTTP/1.1" 200 -
+2026-04-09 23:16:55,070 [INFO] 127.0.0.1 - - [09/Apr/2026 23:16:55] "GET /socket.io/?EIO=4&transport=polling&t=PrrBPOS HTTP/1.1" 200 -
+2026-04-09 23:16:55,081 [INFO] 127.0.0.1 - - [09/Apr/2026 23:16:55] "GET /socket.io/?EIO=4&transport=polling&t=PrrBPOb&sid=1tzrBUKrcymUeZ_gAAAE HTTP/1.1" 200 -
+2026-04-09 23:16:55,082 [INFO] 127.0.0.1 - - [09/Apr/2026 23:16:55] "POST /socket.io/?EIO=4&transport=polling&t=PrrBPOa&sid=1tzrBUKrcymUeZ_gAAAE HTTP/1.1" 200 -
+2026-04-09 23:17:32,259 [WARNING] get_open_assets fallback (não-crítico): 'underlying'
+2026-04-09 23:23:22,212 [WARNING] Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+2026-04-09 23:23:22,220 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+2026-04-09 23:23:22,220 [INFO] [33mPress CTRL+C to quit[0m
+2026-04-09 23:23:23,232 [INFO] 127.0.0.1 - - [09/Apr/2026 23:23:23] "GET /socket.io/?EIO=4&transport=polling&t=PrrCu9T HTTP/1.1" 200 -
+2026-04-09 23:23:23,238 [INFO] 127.0.0.1 - - [09/Apr/2026 23:23:23] "GET /socket.io/?EIO=4&transport=polling&t=PrrCu9Y&sid=tTh4tzx32G5a8-esAAAA HTTP/1.1" 200 -
+2026-04-09 23:23:23,257 [INFO] 127.0.0.1 - - [09/Apr/2026 23:23:23] "POST /socket.io/?EIO=4&transport=polling&t=PrrCu9X&sid=tTh4tzx32G5a8-esAAAA HTTP/1.1" 200 -
+2026-04-09 23:24:19,495 [WARNING] get_open_assets fallback (não-crítico): 'underlying'
+2026-04-09 23:25:21,260 [ERROR] **warning** buy late 5 sec
+2026-04-09 23:25:37,899 [ERROR] **warning** buy late 5 sec
+2026-04-09 23:26:05,220 [ERROR] **warning** buy late 5 sec
+2026-04-09 23:26:33,976 [ERROR] **warning** buy late 5 sec
+2026-04-09 23:27:15,785 [ERROR] **warning** buy late 5 sec
+2026-04-09 23:27:31,368 [ERROR] **warning** buy late 5 sec
+2026-04-09 23:27:51,918 [ERROR] **warning** buy late 5 sec
+2026-04-09 23:29:30,411 [INFO] Database backup created successfully.
+2026-04-09 23:33:26,112 [INFO] 127.0.0.1 - - [09/Apr/2026 23:33:26] "GET / HTTP/1.1" 200 -
+2026-04-09 23:33:26,741 [INFO] 127.0.0.1 - - [09/Apr/2026 23:33:26] "GET /socket.io/?EIO=4&transport=polling&t=PrrFBRK HTTP/1.1" 200 -
+2026-04-09 23:33:26,834 [INFO] 127.0.0.1 - - [09/Apr/2026 23:33:26] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-09 23:33:27,564 [INFO] 127.0.0.1 - - [09/Apr/2026 23:33:27] "GET /socket.io/?EIO=4&transport=polling&t=PrrFBbw&sid=j03qC3HIDL52LJjCAAAC HTTP/1.1" 200 -
+2026-04-09 23:33:28,108 [INFO] 127.0.0.1 - - [09/Apr/2026 23:33:28] "POST /socket.io/?EIO=4&transport=polling&t=PrrFBbv&sid=j03qC3HIDL52LJjCAAAC HTTP/1.1" 200 -
+2026-04-09 23:34:30,658 [INFO] Database backup created successfully.
+2026-04-09 23:34:35,475 [INFO] 127.0.0.1 - - [09/Apr/2026 23:34:35] "GET /socket.io/?EIO=4&transport=websocket&sid=tTh4tzx32G5a8-esAAAA HTTP/1.1" 200 -
+2026-04-09 23:38:19,421 [WARNING] Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+2026-04-09 23:38:19,432 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+2026-04-09 23:38:19,432 [INFO] [33mPress CTRL+C to quit[0m
+2026-04-09 23:38:19,628 [INFO] 127.0.0.1 - - [09/Apr/2026 23:38:19] "GET /socket.io/?EIO=4&transport=polling&t=PrrGItf HTTP/1.1" 200 -
+2026-04-09 23:38:19,634 [INFO] 127.0.0.1 - - [09/Apr/2026 23:38:19] "GET /socket.io/?EIO=4&transport=polling&t=PrrGI_l&sid=nYF6qmVY16wuePzVAAAA HTTP/1.1" 200 -
+2026-04-09 23:38:19,639 [INFO] 127.0.0.1 - - [09/Apr/2026 23:38:19] "GET /socket.io/?EIO=4&transport=polling&t=PrrGI_q&sid=nYF6qmVY16wuePzVAAAA HTTP/1.1" 200 -
+2026-04-09 23:38:19,664 [INFO] 127.0.0.1 - - [09/Apr/2026 23:38:19] "POST /socket.io/?EIO=4&transport=polling&t=PrrGI_k&sid=nYF6qmVY16wuePzVAAAA HTTP/1.1" 200 -
+2026-04-09 23:38:49,613 [INFO] 127.0.0.1 - - [09/Apr/2026 23:38:49] "GET / HTTP/1.1" 200 -
+2026-04-09 23:38:49,775 [INFO] 127.0.0.1 - - [09/Apr/2026 23:38:49] "GET /socket.io/?EIO=4&transport=polling&t=PrrGQMj HTTP/1.1" 200 -
+2026-04-09 23:38:49,812 [INFO] 127.0.0.1 - - [09/Apr/2026 23:38:49] "POST /socket.io/?EIO=4&transport=polling&t=PrrGQNC&sid=UbqeeVvR9fI7Q80yAAAC HTTP/1.1" 200 -
+2026-04-09 23:38:49,816 [INFO] 127.0.0.1 - - [09/Apr/2026 23:38:49] "GET /socket.io/?EIO=4&transport=polling&t=PrrGQND&sid=UbqeeVvR9fI7Q80yAAAC HTTP/1.1" 200 -
+2026-04-09 23:38:49,869 [INFO] 127.0.0.1 - - [09/Apr/2026 23:38:49] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-09 23:38:54,154 [INFO] 127.0.0.1 - - [09/Apr/2026 23:38:54] "GET /socket.io/?EIO=4&transport=websocket&sid=nYF6qmVY16wuePzVAAAA HTTP/1.1" 200 -
+2026-04-09 23:39:24,406 [WARNING] get_open_assets fallback (não-crítico): 'underlying'
+2026-04-09 23:40:14,567 [ERROR] **warning** buy late 5 sec
+2026-04-09 23:40:30,342 [ERROR] **warning** buy late 5 sec
+2026-04-09 23:40:47,365 [ERROR] **warning** buy late 5 sec
+2026-04-09 23:41:13,228 [INFO] 127.0.0.1 - - [09/Apr/2026 23:41:13] "GET / HTTP/1.1" 200 -
+2026-04-09 23:41:13,380 [INFO] 127.0.0.1 - - [09/Apr/2026 23:41:13] "GET /socket.io/?EIO=4&transport=websocket&sid=UbqeeVvR9fI7Q80yAAAC HTTP/1.1" 200 -
+2026-04-09 23:41:13,855 [INFO] 127.0.0.1 - - [09/Apr/2026 23:41:13] "GET /socket.io/?EIO=4&transport=polling&t=PrrGzRX HTTP/1.1" 200 -
+2026-04-09 23:41:14,025 [ERROR] **warning** buy late 5 sec
+2026-04-09 23:41:15,458 [INFO] 127.0.0.1 - - [09/Apr/2026 23:41:15] "GET /socket.io/?EIO=4&transport=polling&t=PrrGzcM&sid=U74fC7N4PjCrOf_SAAAE HTTP/1.1" 200 -
+2026-04-09 23:41:16,416 [INFO] 127.0.0.1 - - [09/Apr/2026 23:41:16] "POST /socket.io/?EIO=4&transport=polling&t=PrrGzcL&sid=U74fC7N4PjCrOf_SAAAE HTTP/1.1" 200 -
+2026-04-09 23:42:20,699 [ERROR] **warning** buy late 5 sec
+2026-04-09 23:44:34,809 [INFO] Database backup created successfully.
+2026-04-09 23:45:59,711 [INFO] 127.0.0.1 - - [09/Apr/2026 23:45:59] "GET / HTTP/1.1" 200 -
+2026-04-09 23:45:59,719 [INFO] 127.0.0.1 - - [09/Apr/2026 23:45:59] "GET /socket.io/?EIO=4&transport=websocket&sid=U74fC7N4PjCrOf_SAAAE HTTP/1.1" 200 -
+2026-04-09 23:45:59,856 [INFO] 127.0.0.1 - - [09/Apr/2026 23:45:59] "GET /socket.io/?EIO=4&transport=polling&t=PrrI3L- HTTP/1.1" 200 -
+2026-04-09 23:46:00,210 [INFO] 127.0.0.1 - - [09/Apr/2026 23:46:00] "GET /socket.io/?EIO=4&transport=polling&t=PrrI3Ne&sid=45r-EQtCDVs_eDSaAAAG HTTP/1.1" 200 -
+2026-04-09 23:46:00,318 [INFO] 127.0.0.1 - - [09/Apr/2026 23:46:00] "POST /socket.io/?EIO=4&transport=polling&t=PrrI3Nc&sid=45r-EQtCDVs_eDSaAAAG HTTP/1.1" 200 -
+2026-04-09 23:48:14,966 [WARNING] Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+2026-04-09 23:48:14,974 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+2026-04-09 23:48:14,974 [INFO] [33mPress CTRL+C to quit[0m
+2026-04-09 23:48:15,748 [INFO] 127.0.0.1 - - [09/Apr/2026 23:48:15] "GET /socket.io/?EIO=4&transport=polling&t=PrrIaY1 HTTP/1.1" 200 -
+2026-04-09 23:48:15,755 [INFO] 127.0.0.1 - - [09/Apr/2026 23:48:15] "GET /socket.io/?EIO=4&transport=polling&t=PrrIaY6&sid=63wFZtkl1JmTL_8rAAAA HTTP/1.1" 200 -
+2026-04-09 23:48:15,775 [INFO] 127.0.0.1 - - [09/Apr/2026 23:48:15] "POST /socket.io/?EIO=4&transport=polling&t=PrrIaY5&sid=63wFZtkl1JmTL_8rAAAA HTTP/1.1" 200 -
+2026-04-09 23:48:41,198 [INFO] 127.0.0.1 - - [09/Apr/2026 23:48:41] "GET / HTTP/1.1" 200 -
+2026-04-09 23:48:41,389 [INFO] 127.0.0.1 - - [09/Apr/2026 23:48:41] "GET /socket.io/?EIO=4&transport=polling&t=PrrIgoh HTTP/1.1" 200 -
+2026-04-09 23:48:41,431 [INFO] 127.0.0.1 - - [09/Apr/2026 23:48:41] "POST /socket.io/?EIO=4&transport=polling&t=PrrIgpD&sid=ldfzYnR0t2M62ucMAAAC HTTP/1.1" 200 -
+2026-04-09 23:48:41,431 [INFO] 127.0.0.1 - - [09/Apr/2026 23:48:41] "GET /socket.io/?EIO=4&transport=polling&t=PrrIgpE&sid=ldfzYnR0t2M62ucMAAAC HTTP/1.1" 200 -
+2026-04-09 23:49:16,950 [WARNING] get_open_assets fallback (não-crítico): 'underlying'
+2026-04-09 23:54:26,135 [INFO] Database backup created successfully.
+2026-04-09 23:59:26,254 [INFO] Database backup created successfully.
+2026-04-10 00:04:26,457 [INFO] Database backup created successfully.
+2026-04-10 00:08:47,715 [WARNING] Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+2026-04-10 00:08:47,724 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+2026-04-10 00:08:47,724 [INFO] [33mPress CTRL+C to quit[0m
+2026-04-10 00:08:47,738 [INFO] 127.0.0.1 - - [10/Apr/2026 00:08:47] "GET /socket.io/?EIO=4&transport=polling&t=PrrNGtw HTTP/1.1" 200 -
+2026-04-10 00:08:47,745 [INFO] 127.0.0.1 - - [10/Apr/2026 00:08:47] "GET /socket.io/?EIO=4&transport=polling&t=PrrNHCf HTTP/1.1" 200 -
+2026-04-10 00:08:47,754 [INFO] 127.0.0.1 - - [10/Apr/2026 00:08:47] "GET /socket.io/?EIO=4&transport=polling&t=PrrNHJ-&sid=cxkmdgJDQeJCiXiQAAAA HTTP/1.1" 200 -
+2026-04-10 00:08:47,778 [INFO] 127.0.0.1 - - [10/Apr/2026 00:08:47] "POST /socket.io/?EIO=4&transport=polling&t=PrrNHJy&sid=cxkmdgJDQeJCiXiQAAAA HTTP/1.1" 200 -
+2026-04-10 00:08:47,783 [INFO] 127.0.0.1 - - [10/Apr/2026 00:08:47] "GET /socket.io/?EIO=4&transport=polling&t=PrrNHK9&sid=KA1wh_51a128pQyxAAAB HTTP/1.1" 200 -
+2026-04-10 00:08:47,785 [INFO] 127.0.0.1 - - [10/Apr/2026 00:08:47] "POST /socket.io/?EIO=4&transport=polling&t=PrrNHK7&sid=KA1wh_51a128pQyxAAAB HTTP/1.1" 200 -
+2026-04-10 00:09:14,113 [INFO] 127.0.0.1 - - [10/Apr/2026 00:09:14] "GET / HTTP/1.1" 200 -
+2026-04-10 00:09:14,290 [INFO] 127.0.0.1 - - [10/Apr/2026 00:09:14] "GET /socket.io/?EIO=4&transport=polling&t=PrrNNol HTTP/1.1" 200 -
+2026-04-10 00:09:14,331 [INFO] 127.0.0.1 - - [10/Apr/2026 00:09:14] "GET /socket.io/?EIO=4&transport=polling&t=PrrNNpL&sid=HELK9xG7ZMu0KtijAAAE HTTP/1.1" 200 -
+2026-04-10 00:09:14,331 [INFO] 127.0.0.1 - - [10/Apr/2026 00:09:14] "POST /socket.io/?EIO=4&transport=polling&t=PrrNNpK&sid=HELK9xG7ZMu0KtijAAAE HTTP/1.1" 200 -
+2026-04-10 00:09:45,874 [WARNING] get_open_assets fallback (não-crítico): 'underlying'
+2026-04-10 00:10:18,273 [INFO] 127.0.0.1 - - [10/Apr/2026 00:10:18] "GET / HTTP/1.1" 200 -
+2026-04-10 00:10:18,636 [INFO] 127.0.0.1 - - [10/Apr/2026 00:10:18] "GET /socket.io/?EIO=4&transport=websocket&sid=HELK9xG7ZMu0KtijAAAE HTTP/1.1" 200 -
+2026-04-10 00:10:19,025 [INFO] 127.0.0.1 - - [10/Apr/2026 00:10:19] "GET /socket.io/?EIO=4&transport=polling&t=PrrNdXM HTTP/1.1" 200 -
+2026-04-10 00:10:20,341 [INFO] 127.0.0.1 - - [10/Apr/2026 00:10:20] "POST /socket.io/?EIO=4&transport=polling&t=PrrNdgb&sid=Yv5SsIpEj98J8g9zAAAG HTTP/1.1" 200 -
+2026-04-10 00:10:20,424 [INFO] 127.0.0.1 - - [10/Apr/2026 00:10:20] "GET /socket.io/?EIO=4&transport=polling&t=PrrNdgb.0&sid=Yv5SsIpEj98J8g9zAAAG HTTP/1.1" 200 -
+2026-04-10 00:14:55,277 [INFO] Database backup created successfully.
+2026-04-10 00:19:55,369 [INFO] Database backup created successfully.
+2026-04-10 00:24:55,489 [INFO] Database backup created successfully.
+2026-04-10 00:29:55,695 [INFO] Database backup created successfully.
+2026-04-10 00:34:55,741 [INFO] Database backup created successfully.
+2026-04-10 00:39:55,850 [INFO] Database backup created successfully.
+2026-04-10 00:44:55,970 [INFO] Database backup created successfully.
+2026-04-10 00:49:56,094 [INFO] Database backup created successfully.
+2026-04-10 00:51:03,183 [WARNING] Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+2026-04-10 00:51:03,202 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+2026-04-10 00:51:03,202 [INFO] [33mPress CTRL+C to quit[0m
+2026-04-10 00:51:03,374 [INFO] 127.0.0.1 - - [10/Apr/2026 00:51:03] "GET /socket.io/?EIO=4&transport=polling&t=PrrWxx2 HTTP/1.1" 200 -
+2026-04-10 00:51:03,397 [INFO] 127.0.0.1 - - [10/Apr/2026 00:51:03] "GET /socket.io/?EIO=4&transport=polling&t=PrrWy3i HTTP/1.1" 200 -
+2026-04-10 00:51:03,440 [INFO] 127.0.0.1 - - [10/Apr/2026 00:51:03] "GET /socket.io/?EIO=4&transport=polling&t=PrrWyBX HTTP/1.1" 200 -
+2026-04-10 00:51:03,509 [INFO] 127.0.0.1 - - [10/Apr/2026 00:51:03] "POST /socket.io/?EIO=4&transport=polling&t=PrrWyNl&sid=H-l63G1YLmzonqwBAAAB HTTP/1.1" 200 -
+2026-04-10 00:51:03,510 [INFO] 127.0.0.1 - - [10/Apr/2026 00:51:03] "POST /socket.io/?EIO=4&transport=polling&t=PrrWyNR&sid=luBL6XB7_hj5-KCRAAAA HTTP/1.1" 200 -
+2026-04-10 00:51:03,585 [INFO] 127.0.0.1 - - [10/Apr/2026 00:51:03] "GET /socket.io/?EIO=4&transport=polling&t=PrrWyNo&sid=luBL6XB7_hj5-KCRAAAA HTTP/1.1" 200 -
+2026-04-10 00:51:03,602 [INFO] 127.0.0.1 - - [10/Apr/2026 00:51:03] "GET /socket.io/?EIO=4&transport=polling&t=PrrWyNo&sid=H-l63G1YLmzonqwBAAAB HTTP/1.1" 200 -
+2026-04-10 00:51:03,621 [INFO] 127.0.0.1 - - [10/Apr/2026 00:51:03] "POST /socket.io/?EIO=4&transport=polling&t=PrrWyQL&sid=YXDrR6im9l4jIu7tAAAC HTTP/1.1" 200 -
+2026-04-10 00:51:03,649 [INFO] 127.0.0.1 - - [10/Apr/2026 00:51:03] "GET /socket.io/?EIO=4&transport=polling&t=PrrWyQN&sid=YXDrR6im9l4jIu7tAAAC HTTP/1.1" 200 -
+2026-04-10 00:51:23,792 [INFO] 127.0.0.1 - - [10/Apr/2026 00:51:23] "GET / HTTP/1.1" 200 -
+2026-04-10 00:51:24,125 [INFO] 127.0.0.1 - - [10/Apr/2026 00:51:24] "GET /socket.io/?EIO=4&transport=polling&t=PrrX1RN HTTP/1.1" 200 -
+2026-04-10 00:51:24,175 [INFO] 127.0.0.1 - - [10/Apr/2026 00:51:24] "POST /socket.io/?EIO=4&transport=polling&t=PrrX1Ru&sid=l76J5ow-8znP7pfsAAAG HTTP/1.1" 200 -
+2026-04-10 00:51:24,210 [INFO] 127.0.0.1 - - [10/Apr/2026 00:51:24] "GET /socket.io/?EIO=4&transport=polling&t=PrrX1Rx&sid=l76J5ow-8znP7pfsAAAG HTTP/1.1" 200 -
+2026-04-10 00:51:24,307 [INFO] 127.0.0.1 - - [10/Apr/2026 00:51:24] "GET /socket.io/?EIO=4&transport=polling&t=PrrX1TC&sid=l76J5ow-8znP7pfsAAAG HTTP/1.1" 200 -
+2026-04-10 00:51:24,310 [INFO] 127.0.0.1 - - [10/Apr/2026 00:51:24] "POST /socket.io/?EIO=4&transport=polling&t=PrrX1TD&sid=l76J5ow-8znP7pfsAAAG HTTP/1.1" 200 -
+2026-04-10 01:37:47,452 [WARNING] Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+2026-04-10 01:37:47,461 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+2026-04-10 01:37:47,461 [INFO] [33mPress CTRL+C to quit[0m
+2026-04-10 01:37:50,219 [INFO] 127.0.0.1 - - [10/Apr/2026 01:37:50] "GET / HTTP/1.1" 200 -
+2026-04-10 01:37:50,393 [INFO] 127.0.0.1 - - [10/Apr/2026 01:37:50] "GET /socket.io/?EIO=4&transport=polling&t=Prrhfgs HTTP/1.1" 200 -
+2026-04-10 01:37:50,453 [INFO] 127.0.0.1 - - [10/Apr/2026 01:37:50] "GET /socket.io/?EIO=4&transport=polling&t=Prrhfhl&sid=2z6JebJ1NvjZ17QFAAAA HTTP/1.1" 200 -
+2026-04-10 01:37:50,496 [INFO] 127.0.0.1 - - [10/Apr/2026 01:37:50] "POST /socket.io/?EIO=4&transport=polling&t=Prrhfhk&sid=2z6JebJ1NvjZ17QFAAAA HTTP/1.1" 200 -
+2026-04-10 01:38:04,899 [INFO] 127.0.0.1 - - [10/Apr/2026 01:38:04] "GET / HTTP/1.1" 200 -
+2026-04-10 01:38:05,077 [INFO] 127.0.0.1 - - [10/Apr/2026 01:38:05] "GET /socket.io/?EIO=4&transport=polling&t=PrrhjGI HTTP/1.1" 200 -
+2026-04-10 01:38:05,283 [INFO] 127.0.0.1 - - [10/Apr/2026 01:38:05] "GET /socket.io/?EIO=4&transport=polling&t=PrrhjH0&sid=qV-g7TDdIA-Mz0WWAAAC HTTP/1.1" 200 -
+2026-04-10 01:38:05,299 [INFO] 127.0.0.1 - - [10/Apr/2026 01:38:05] "POST /socket.io/?EIO=4&transport=polling&t=PrrhjG_&sid=qV-g7TDdIA-Mz0WWAAAC HTTP/1.1" 200 -
+2026-04-10 01:38:06,984 [INFO] 127.0.0.1 - - [10/Apr/2026 01:38:06] "GET /socket.io/?EIO=4&transport=websocket&sid=qV-g7TDdIA-Mz0WWAAAC HTTP/1.1" 200 -
+2026-04-10 01:38:19,206 [WARNING] get_open_assets fallback (não-crítico): 'underlying'
+2026-04-10 01:38:31,790 [INFO] 127.0.0.1 - - [10/Apr/2026 01:38:31] "HEAD / HTTP/1.1" 200 -
+2026-04-10 01:38:31,868 [INFO] 127.0.0.1 - - [10/Apr/2026 01:38:31] "GET / HTTP/1.1" 200 -
+2026-04-10 01:43:30,051 [INFO] Database backup created successfully.
+2026-04-10 01:48:12,211 [WARNING] Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+2026-04-10 01:48:12,223 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+2026-04-10 01:48:12,223 [INFO] [33mPress CTRL+C to quit[0m
+2026-04-10 01:48:13,851 [INFO] 127.0.0.1 - - [10/Apr/2026 01:48:13] "GET /socket.io/?EIO=4&transport=polling&t=Prrk1uO HTTP/1.1" 200 -
+2026-04-10 01:48:13,859 [INFO] 127.0.0.1 - - [10/Apr/2026 01:48:13] "GET /socket.io/?EIO=4&transport=polling&t=Prrk1uU&sid=0f0zVEMDbHY7ceJ4AAAA HTTP/1.1" 200 -
+2026-04-10 01:48:13,869 [INFO] 127.0.0.1 - - [10/Apr/2026 01:48:13] "POST /socket.io/?EIO=4&transport=polling&t=Prrk1uT&sid=0f0zVEMDbHY7ceJ4AAAA HTTP/1.1" 200 -
+2026-04-10 01:48:19,425 [INFO] 127.0.0.1 - - [10/Apr/2026 01:48:19] "GET / HTTP/1.1" 200 -
+2026-04-10 01:48:19,433 [INFO] 127.0.0.1 - - [10/Apr/2026 01:48:19] "GET /socket.io/?EIO=4&transport=websocket&sid=0f0zVEMDbHY7ceJ4AAAA HTTP/1.1" 200 -
+2026-04-10 01:48:19,565 [INFO] 127.0.0.1 - - [10/Apr/2026 01:48:19] "GET /socket.io/?EIO=4&transport=polling&t=Prrk3Hg HTTP/1.1" 200 -
+2026-04-10 01:48:19,579 [INFO] 127.0.0.1 - - [10/Apr/2026 01:48:19] "GET /socket.io/?EIO=4&transport=polling&t=Prrk3Hp&sid=MO-J9FSlYjD5q3qxAAAC HTTP/1.1" 200 -
+2026-04-10 01:48:19,580 [INFO] 127.0.0.1 - - [10/Apr/2026 01:48:19] "POST /socket.io/?EIO=4&transport=polling&t=Prrk3Ho&sid=MO-J9FSlYjD5q3qxAAAC HTTP/1.1" 200 -
+2026-04-10 01:48:26,504 [INFO] 127.0.0.1 - - [10/Apr/2026 01:48:26] "GET / HTTP/1.1" 200 -
+2026-04-10 01:48:26,513 [INFO] 127.0.0.1 - - [10/Apr/2026 01:48:26] "GET /socket.io/?EIO=4&transport=websocket&sid=MO-J9FSlYjD5q3qxAAAC HTTP/1.1" 200 -
+2026-04-10 01:48:26,575 [INFO] 127.0.0.1 - - [10/Apr/2026 01:48:26] "GET /socket.io/?EIO=4&transport=polling&t=Prrk4_B HTTP/1.1" 200 -
+2026-04-10 01:48:26,586 [INFO] 127.0.0.1 - - [10/Apr/2026 01:48:26] "GET /socket.io/?EIO=4&transport=polling&t=Prrk4_K.0&sid=tAoUyZKWta0wWSAhAAAE HTTP/1.1" 200 -
+2026-04-10 01:48:26,589 [INFO] 127.0.0.1 - - [10/Apr/2026 01:48:26] "POST /socket.io/?EIO=4&transport=polling&t=Prrk4_K&sid=tAoUyZKWta0wWSAhAAAE HTTP/1.1" 200 -
+2026-04-10 01:48:56,128 [WARNING] get_open_assets fallback (não-crítico): 'underlying'
+2026-04-10 01:50:27,048 [INFO] 127.0.0.1 - - [10/Apr/2026 01:50:27] "GET / HTTP/1.1" 200 -
+2026-04-10 01:50:27,581 [INFO] 127.0.0.1 - - [10/Apr/2026 01:50:27] "GET /socket.io/?EIO=4&transport=polling&t=PrrkYUE HTTP/1.1" 200 -
+2026-04-10 01:50:27,595 [INFO] 127.0.0.1 - - [10/Apr/2026 01:50:27] "GET /socket.io/?EIO=4&transport=websocket&sid=tAoUyZKWta0wWSAhAAAE HTTP/1.1" 200 -
+2026-04-10 01:50:28,422 [INFO] 127.0.0.1 - - [10/Apr/2026 01:50:28] "GET /socket.io/?EIO=4&transport=polling&t=PrrkYak&sid=Ky-i1vARi_5b5NPGAAAG HTTP/1.1" 200 -
+2026-04-10 01:50:28,982 [INFO] 127.0.0.1 - - [10/Apr/2026 01:50:28] "POST /socket.io/?EIO=4&transport=polling&t=PrrkYaj&sid=Ky-i1vARi_5b5NPGAAAG HTTP/1.1" 200 -
+2026-04-10 01:51:12,637 [WARNING] Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+2026-04-10 01:51:12,645 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+2026-04-10 01:51:12,645 [INFO] [33mPress CTRL+C to quit[0m
+2026-04-10 01:51:12,815 [INFO] 127.0.0.1 - - [10/Apr/2026 01:51:12] "GET /socket.io/?EIO=4&transport=polling&t=PrrkjKr HTTP/1.1" 200 -
+2026-04-10 01:51:12,821 [INFO] 127.0.0.1 - - [10/Apr/2026 01:51:12] "GET /socket.io/?EIO=4&transport=polling&t=Prrkjan&sid=mpFuX1QYtZmtLyaJAAAA HTTP/1.1" 200 -
+2026-04-10 01:51:12,831 [INFO] 127.0.0.1 - - [10/Apr/2026 01:51:12] "POST /socket.io/?EIO=4&transport=polling&t=Prrkjam&sid=mpFuX1QYtZmtLyaJAAAA HTTP/1.1" 200 -
+2026-04-10 01:51:14,281 [INFO] 127.0.0.1 - - [10/Apr/2026 01:51:14] "GET / HTTP/1.1" 200 -
+2026-04-10 01:51:14,288 [INFO] 127.0.0.1 - - [10/Apr/2026 01:51:14] "GET /socket.io/?EIO=4&transport=websocket&sid=mpFuX1QYtZmtLyaJAAAA HTTP/1.1" 200 -
+2026-04-10 01:51:14,361 [INFO] 127.0.0.1 - - [10/Apr/2026 01:51:14] "GET /socket.io/?EIO=4&transport=polling&t=Prrkjys HTTP/1.1" 200 -
+2026-04-10 01:51:14,374 [INFO] 127.0.0.1 - - [10/Apr/2026 01:51:14] "GET /socket.io/?EIO=4&transport=polling&t=Prrkjy-&sid=5UfA_CU7zjbt5egYAAAC HTTP/1.1" 200 -
+2026-04-10 01:51:14,375 [INFO] 127.0.0.1 - - [10/Apr/2026 01:51:14] "POST /socket.io/?EIO=4&transport=polling&t=Prrkjyz&sid=5UfA_CU7zjbt5egYAAAC HTTP/1.1" 200 -
+2026-04-10 01:51:45,242 [WARNING] get_open_assets fallback (não-crítico): 'underlying'
+2026-04-10 01:56:58,368 [INFO] Database backup created successfully.
+2026-04-10 02:00:41,437 [WARNING] Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+2026-04-10 02:00:41,447 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+2026-04-10 02:00:41,447 [INFO] [33mPress CTRL+C to quit[0m
+2026-04-10 02:00:44,781 [INFO] 127.0.0.1 - - [10/Apr/2026 02:00:44] "GET /socket.io/?EIO=4&transport=polling&t=PrrmvDg HTTP/1.1" 200 -
+2026-04-10 02:00:44,787 [INFO] 127.0.0.1 - - [10/Apr/2026 02:00:44] "GET /socket.io/?EIO=4&transport=polling&t=PrrmvDl&sid=NRMee967QHr2lWL7AAAA HTTP/1.1" 200 -
+2026-04-10 02:00:44,797 [INFO] 127.0.0.1 - - [10/Apr/2026 02:00:44] "POST /socket.io/?EIO=4&transport=polling&t=PrrmvDk&sid=NRMee967QHr2lWL7AAAA HTTP/1.1" 200 -
+2026-04-10 02:02:40,762 [WARNING] get_open_assets fallback (não-crítico): 'underlying'
+2026-04-10 02:07:55,535 [INFO] Database backup created successfully.
+2026-04-10 02:12:55,712 [INFO] Database backup created successfully.
+2026-04-10 02:17:43,297 [WARNING] Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+2026-04-10 02:17:43,306 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+2026-04-10 02:17:43,306 [INFO] [33mPress CTRL+C to quit[0m
+2026-04-10 02:17:46,445 [INFO] 127.0.0.1 - - [10/Apr/2026 02:17:46] "GET /socket.io/?EIO=4&transport=polling&t=PrrqofA HTTP/1.1" 200 -
+2026-04-10 02:17:46,453 [INFO] 127.0.0.1 - - [10/Apr/2026 02:17:46] "GET /socket.io/?EIO=4&transport=polling&t=PrrqofF.0&sid=ZK667zHGL0FAeHZ-AAAA HTTP/1.1" 200 -
+2026-04-10 02:17:46,467 [INFO] 127.0.0.1 - - [10/Apr/2026 02:17:46] "POST /socket.io/?EIO=4&transport=polling&t=PrrqofF&sid=ZK667zHGL0FAeHZ-AAAA HTTP/1.1" 200 -
+2026-04-10 02:18:05,952 [INFO] 127.0.0.1 - - [10/Apr/2026 02:18:05] "GET / HTTP/1.1" 200 -
+2026-04-10 02:18:06,121 [INFO] 127.0.0.1 - - [10/Apr/2026 02:18:06] "GET /socket.io/?EIO=4&transport=polling&t=PrrqtSc HTTP/1.1" 200 -
+2026-04-10 02:18:06,182 [INFO] 127.0.0.1 - - [10/Apr/2026 02:18:06] "POST /socket.io/?EIO=4&transport=polling&t=PrrqtTS&sid=BP4Zbk93Wp0QmCP4AAAC HTTP/1.1" 200 -
+2026-04-10 02:18:06,183 [INFO] 127.0.0.1 - - [10/Apr/2026 02:18:06] "GET /socket.io/?EIO=4&transport=polling&t=PrrqtTT&sid=BP4Zbk93Wp0QmCP4AAAC HTTP/1.1" 200 -
+2026-04-10 02:18:06,226 [INFO] 127.0.0.1 - - [10/Apr/2026 02:18:06] "GET /socket.io/?EIO=4&transport=polling&t=PrrqtUF&sid=BP4Zbk93Wp0QmCP4AAAC HTTP/1.1" 200 -
+2026-04-10 02:18:06,235 [INFO] 127.0.0.1 - - [10/Apr/2026 02:18:06] "GET /socket.io/?EIO=4&transport=polling&t=PrrqtUM&sid=BP4Zbk93Wp0QmCP4AAAC HTTP/1.1" 200 -
+2026-04-10 02:18:26,613 [WARNING] get_open_assets fallback (não-crítico): 'underlying'
+2026-04-10 02:19:08,188 [WARNING] get_open_assets fallback (não-crítico): 'underlying'
+2026-04-10 02:24:21,972 [INFO] Database backup created successfully.
+2026-04-10 02:29:21,990 [INFO] Database backup created successfully.
+2026-04-10 02:31:15,303 [WARNING] Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+2026-04-10 02:31:15,314 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+2026-04-10 02:31:15,315 [INFO] [33mPress CTRL+C to quit[0m
+2026-04-10 02:31:16,134 [INFO] 127.0.0.1 - - [10/Apr/2026 02:31:16] "GET /socket.io/?EIO=4&transport=polling&t=PrrtuKZ HTTP/1.1" 200 -
+2026-04-10 02:31:16,142 [INFO] 127.0.0.1 - - [10/Apr/2026 02:31:16] "GET /socket.io/?EIO=4&transport=polling&t=PrrtuKf&sid=rdpFQ2lHIXte9B59AAAA HTTP/1.1" 200 -
+2026-04-10 02:31:16,156 [INFO] 127.0.0.1 - - [10/Apr/2026 02:31:16] "POST /socket.io/?EIO=4&transport=polling&t=PrrtuKe&sid=rdpFQ2lHIXte9B59AAAA HTTP/1.1" 200 -
+2026-04-10 02:31:19,154 [INFO] 127.0.0.1 - - [10/Apr/2026 02:31:19] "GET /socket.io/?EIO=4&transport=polling&t=Prrtv3l HTTP/1.1" 200 -
+2026-04-10 02:31:19,160 [INFO] 127.0.0.1 - - [10/Apr/2026 02:31:19] "GET /socket.io/?EIO=4&transport=polling&t=Prrtv3q&sid=TxpminlO6ZzR-8smAAAC HTTP/1.1" 200 -
+2026-04-10 02:31:19,161 [INFO] 127.0.0.1 - - [10/Apr/2026 02:31:19] "POST /socket.io/?EIO=4&transport=polling&t=Prrtv3p&sid=TxpminlO6ZzR-8smAAAC HTTP/1.1" 200 -
+2026-04-10 02:50:13,330 [WARNING] get_open_assets fallback (não-crítico): 'underlying'
+2026-04-10 02:51:57,164 [INFO] 127.0.0.1 - - [10/Apr/2026 02:51:57] "GET /socket.io/?EIO=4&transport=websocket&sid=rdpFQ2lHIXte9B59AAAA HTTP/1.1" 200 -
+2026-04-10 02:51:57,390 [INFO] 127.0.0.1 - - [10/Apr/2026 02:51:57] "GET /socket.io/?EIO=4&transport=websocket&sid=TxpminlO6ZzR-8smAAAC HTTP/1.1" 200 -
+2026-04-10 02:55:22,754 [WARNING] Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+2026-04-10 02:55:22,762 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+2026-04-10 02:55:22,762 [INFO] [33mPress CTRL+C to quit[0m
+2026-04-10 02:59:33,939 [INFO] 127.0.0.1 - - [10/Apr/2026 02:59:33] "GET / HTTP/1.1" 200 -
+2026-04-10 02:59:34,092 [INFO] 127.0.0.1 - - [10/Apr/2026 02:59:34] "GET /socket.io/?EIO=4&transport=polling&t=Prr-Mt9 HTTP/1.1" 200 -
+2026-04-10 02:59:34,163 [INFO] 127.0.0.1 - - [10/Apr/2026 02:59:34] "GET /socket.io/?EIO=4&transport=polling&t=Prr-Mty&sid=LcWmKX4nWXLddiG2AAAA HTTP/1.1" 200 -
+2026-04-10 02:59:34,195 [INFO] 127.0.0.1 - - [10/Apr/2026 02:59:34] "POST /socket.io/?EIO=4&transport=polling&t=Prr-Mtx&sid=LcWmKX4nWXLddiG2AAAA HTTP/1.1" 200 -
+2026-04-10 02:59:57,835 [WARNING] get_open_assets fallback (não-crítico): 'underlying'
+2026-04-10 03:05:10,678 [INFO] Database backup created successfully.
+2026-04-10 03:10:10,755 [INFO] Database backup created successfully.
+2026-04-10 03:15:10,859 [INFO] Database backup created successfully.
+2026-04-10 03:20:10,967 [INFO] Database backup created successfully.
+2026-04-10 03:25:11,053 [INFO] Database backup created successfully.
+2026-04-10 03:30:11,216 [INFO] Database backup created successfully.
+2026-04-10 03:35:11,341 [INFO] Database backup created successfully.
+2026-04-10 03:40:11,489 [INFO] Database backup created successfully.
+2026-04-10 03:45:11,655 [INFO] Database backup created successfully.
+2026-04-10 03:50:11,740 [INFO] Database backup created successfully.
+2026-04-10 03:55:11,854 [INFO] Database backup created successfully.
+2026-04-10 04:00:11,946 [INFO] Database backup created successfully.
+2026-04-10 04:05:12,054 [INFO] Database backup created successfully.
