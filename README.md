@@ -1,4 +1,4 @@
-# Neto Loff | Software & Backend Engineering
+# Neto Loff | Software Engineer
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white)
@@ -6,75 +6,57 @@
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
 
-Architecting resilient backend systems, low-latency execution engines, and data pipelines. Focused on delivering production-ready computational solutions with strict risk management, concurrency, and performance optimization.
+Backend engineer focused on data-intensive applications and low-latency systems. I build reliable infrastructure, APIs, and trading engines in Python, emphasizing concurrency and pragmatic problem-solving.
 
 ---
 
-## 🏗️ Architectural Standards
+## Technical Scope
 
-All projects within this repository adhere to institutional-grade software principles:
-- **Resiliency**: Built-in circuit breakers, custom exception handling, and persistent state management.
-- **Latency Optimization**: Minimal dependency overhead, optimized SQL queries (WAL mode), and efficient WebSocket stream processing.
-- **Security**: Environment-based configuration, strict input validation, and secure API routing.
-- **Maintainability**: Clean code architecture (MVC/Modular), unified logging, and comprehensive documentation.
+- **Core**: Python, REST APIs, WebSocket/SocketIO, Flask
+- **Data & Trading**: Pandas, NumPy, Kelly Sizing, Time-series analysis
+- **Ops & DB**: Threads, Asynchronous I/O, SQLite (WAL mode), Git
 
 ---
 
-## 🚀 Flagship Engine
+## Main Projects
 
 ### [HFT Trading Engine](./hft-trading-engine)
-An institutional-grade algorithmic trading engine designed for digital options execution. Built to continuously process concurrent WebSocket streams and manage real-time financial exposure.
-- **System Architecture**: Multi-threaded Python architecture with non-blocking I/O telemetry via Flask-SocketIO.
-- **Quantitative Risk Management**: Dynamic position sizing mathematically enforced by the **Kelly Criterion**, with a hard-coded Daily Peak/Drawdown Kill Switch.
-- **Persistence**: High-throughput SQLite implementation using `WAL` (Write-Ahead Logging) mode to guarantee ACID compliance during concurrent order executions.
-
----
-
-## 🛠️ Software Engineering Capabilities
+An algorithmic trading engine built for digital options execution, managing live financial exposure and continuous market data.
+- **Challenge**: Processing high-frequency WebSocket telemetry streams without blocking trade execution threads.
+- **Stack**: Python, Flask-SocketIO, SQLite WAL.
+- **Mechanics**: Implemented a concurrent worker model with isolated I/O loops and automated risk locking via the proportional Kelly Criterion.
 
 ### [ETL Data Pipeline Engine](./etl-pipeline-engine)
-Data automation system designed for reliable extraction, transformation, and loading (ETL) routines.
-- **Mechanics**: Implemented robust functional pipelines leveraging `Pandas` for scalable matrix transformations.
-- **Core Value**: Enterprise-scale CSV/Excel ingestion with schema validation and error-resilient transformation logic.
+A data processing pipeline designed to ingest, clean, and map chaotic spreadsheet data into standardized schemas.
+- **Challenge**: Handling inconsistent column formats and large memory footprints during ingestion.
+- **Stack**: Python, Pandas, Openpyxl.
+- **Mechanics**: Built a functional pipeline utilizing vectorized Pandas operations to reduce processing time and enforce strict data validations.
 
-### [Recruitment Data Management API](./recruit-data-api)
-A modular Web Application built on a custom MVC structure for tracking lifecycle events.
-- **Mechanics**: RESTful logic wrapping a local persistence layer, coupled with a decoupled frontend using Vanilla JS.
-- **Focus**: Clean separation of concerns, secure routing, and highly-maintainable CRUD API design.
+### [Recruitment Data API](./recruit-data-api)
+A centralized web backend for tracking candidate lifecycle events and storing applicant states.
+- **Challenge**: Designing a maintainable MVC structure with decoupled presentation logic.
+- **Stack**: Python, Flask, SQLite, Vanilla JS.
+- **Mechanics**: Delivered a RESTful application separating routing, database transactions, and frontend rendering for clear testability.
 
-### [Stateless Edge Application](./edge-portfolio-app)
-Minimalist, high-performance web deployment optimized for Sub-50ms Time-To-First-Byte (TTFB).
-- **Mechanics**: Zero-bloat Flask architecture utilizing server-side rendering and pure CSS Grid layouts.
-- **Focus**: Accessibility, SEO readiness, and lightweight edge delivery capabilities.
-
----
-
-## ⚙️ Core Technical Proficiencies
-
-*   **Backend Engineering**: Python, REST APIs, WebSocket/SocketIO, Flask, Component Architecture.
-*   **Data & Quantitative Models**: Pandas, NumPy, Time-Series Analysis, Technical Indicators (EMA/RSI), Kelly Sizing.
-*   **Systems & Operations**: Concurrent Threading, SQLite (WAL optimization), Git, Environment Management.
+### [Stateless Edge Portfolio](./edge-portfolio-app)
+A high-performance personal portfolio deployment avoiding heavy front-end frameworks. 
+- **Challenge**: Achieving sub-50ms Time-To-First-Byte (TTFB) and perfect Lighthouse scores.
+- **Stack**: Python, Flask, CSS Grid.
+- **Mechanics**: Used pure server-side rendering and zero external JS dependencies to deliver a 100% lightweight edge application.
 
 ---
 
-## 🔒 Additional Architecture Undertakings (Private/Enterprise)
+## Private & NDA Work
 
-Due to NDAs and proprietary agreements, the source code for the following systems remains private. They reflect extensive backend engineering and data architecture expertise:
+Selected contract work and internal tooling built under NDA:
 
-1. **Distributed Task Queue Manager**: Scalable queuing system processing asynchronous background tasks utilizing consumer-producer patterns.
-2. **Order Matching Engine Core**: Memory-optimized limit order book processing prototype capable of matching transaction blocks.
-3. **Fraud Detection Microservice**: Rule-based transaction screening application utilizing Pandas for threshold detection and anomaly flagging.
-4. **OAuth2 Centralized Auth Server**: Secure, stateless JWT-based identity provider for multi-tenant backend security.
-5. **Algorithmic Backtesting Framework**: Vectorized testing environment utilizing Pandas and NumPy to validate quantitative logic over historical time-series data.
-6. **Real-time Market Data Pipeline**: Low-latency ingestion engine normalizing fragmented WebSocket feeds into a unified schema for downstream consumption.
-7. **Event-Driven Payment Processor**: Asynchronous webhook handler designed for decoupled payment validation and reconciliation.
-8. **Automated Trading Alert Gateway**: Secure telethon-based alerting cluster delivering execution telemetry to stakeholders in real-time.
-9. **Cryptocurrency Arbitrage Scanner**: High-concurrency asynchronous observer evaluating spatial latency opportunities across multiple network nodes.
-10. **SQL Logging & Audit Engine**: Middleware tracker designed for reverse-engineering and optimizing database execution plans.
+1. **Distributed Task Queue Manager**: Built a producer-consumer background worker system using Redis to offload blocking API calls.
+2. **Order Matching Engine Shell**: Drafted a memory-optimized limit order book in Python to match fast transactions.
+3. **Fraud Detection Service**: Developed a Pandas-based screening microservice that flags transactional anomalies based on historical velocity.
+4. **Auth Provider Component**: Set up a centralized JWT Identity Provider (OAuth2 pattern) for multi-tenant backend security.
+5. **Real-time Data Aggregator**: Wrote an ingestion script that normalizes chaotic WebSocket streams into a single downstream schema.
 
 ---
 
-## Contact & Professional Network
-
-📫 **Get in touch**: firmenetto@gmail.com
-🔗 **GitHub Profile**: [@tioloff155-cmd](https://github.com/tioloff155-cmd)
+📫 **Contact**: firmenetto@gmail.com
+🔗 **GitHub**: [@tioloff155-cmd](https://github.com/tioloff155-cmd)
