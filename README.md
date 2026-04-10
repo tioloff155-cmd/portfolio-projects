@@ -10,7 +10,7 @@ Architecting resilient backend systems, low-latency execution engines, and data 
 
 ## 🚀 Flagship Architecture
 
-### [Project-N: High-Frequency Trading (HFT) Engine](./project-n)
+### [Project-N: High-Frequency Trading (HFT) Engine](./hft-trading-engine)
 An institutional-grade algorithmic trading engine designed for digital options execution. Built to continuously process concurrent WebSocket streams and manage real-time financial exposure.
 - **System Architecture**: Multi-threaded Python architecture with non-blocking I/O telemetry via Flask-SocketIO.
 - **Quantitative Risk Management**: Dynamic position sizing mathematically enforced by the **Kelly Criterion**, with a hard-coded Daily Peak/Drawdown Kill Switch.
@@ -21,17 +21,17 @@ An institutional-grade algorithmic trading engine designed for digital options e
 
 ## 🛠️ Software Engineering Capabilities
 
-### [ETL Data Pipeline Engine](./workflow-automation)
+### [ETL Data Pipeline Engine](./etl-pipeline-engine)
 Data automation system designed for reliable extraction, transformation, and loading (ETL) routines.
 - **Mechanics**: Implemented robust functional pipelines leveraging `Pandas` for scalable matrix transformations.
 - **Use Case**: Eliminates manual friction by programmatically sanitizing and structuring large-scale raw data sets into actionable formats.
 
-### [Recruitment Data Management API](./job-tracker)
+### [Recruitment Data Management API](./recruit-data-api)
 A modular Web Application built on a custom MVC structure for tracking lifecycle events.
 - **Mechanics**: RESTful logic wrapping a local persistence layer, coupled with a decoupled frontend using Vanilla JS.
 - **Focus**: Demonstrates clear separation of concerns, secure routing, and straightforward CRUD API design.
 
-### [Stateless Edge Application](./portfolio)
+### [Stateless Edge Application](./edge-portfolio-app)
 Minimalist, high-performance web deployment optimized for Sub-50ms Time-To-First-Byte (TTFB).
 - **Mechanics**: Zero-bloat Flask architecture utilizing server-side rendering and pure CSS Grid layouts.
 - **Focus**: Accessibility, SEO readiness, and lightweight edge delivery capabilities.
