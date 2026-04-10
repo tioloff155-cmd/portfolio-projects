@@ -6,15 +6,16 @@
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
 
-Backend engineer focused on data-intensive applications and low-latency systems. I build reliable infrastructure, APIs, and trading engines in Python, emphasizing concurrency and pragmatic problem-solving.
+Software & Backend Engineer | Python & Data Architecture. Focado em sistemas de baixa latência e purismo técnico (JWT, Heaps, Idempotência).
+*Computer Science student @ Estácio. Building high-performance backend systems with Python. Exploring concurrency, quantitative finance engines, and data engineering.*
 
 ---
 
 ## Technical Scope
 
-- **Core**: Python, REST APIs, WebSocket/SocketIO, Flask
-- **Data & Trading**: Pandas, NumPy, Kelly Sizing, Time-series analysis
-- **Ops & DB**: Threads, Asynchronous I/O, SQLite (WAL mode), Git
+- **Core**: Python (FastAPI/Flask), Asynchronous I/O, Concurrency, Multithreading
+- **Data & Trading**: Pandas, NumPy, Min-Heaps/Max-Heaps, Kelly Sizing, Time-series
+- **Ops & DB**: SQLite (WAL mode), Redis, Docker, Git
 
 ---
 
@@ -24,7 +25,7 @@ Backend engineer focused on data-intensive applications and low-latency systems.
 An algorithmic trading engine built for digital options execution, managing live financial exposure and continuous market data.
 - **Challenge**: Processing high-frequency WebSocket telemetry streams without blocking trade execution threads.
 - **Stack**: Python, Flask-SocketIO, SQLite WAL.
-- **Mechanics**: Implemented a concurrent worker model with isolated I/O loops and automated risk locking via the proportional Kelly Criterion.
+- **Mechanics**: Implemented a core matching engine using **Min/Max Heaps** for price-time priority and automated risk locking via the proportional Kelly Criterion.
 
 ### [ETL Data Pipeline Engine](./etl-pipeline-engine)
 A data processing pipeline designed to ingest, clean, and map chaotic spreadsheet data into standardized schemas.
@@ -32,29 +33,17 @@ A data processing pipeline designed to ingest, clean, and map chaotic spreadshee
 - **Stack**: Python, Pandas, Openpyxl.
 - **Mechanics**: Built a functional pipeline utilizing vectorized Pandas operations to reduce processing time and enforce strict data validations.
 
-### [Recruitment Data API](./recruit-data-api)
-A centralized web backend for tracking candidate lifecycle events and storing applicant states.
-- **Challenge**: Designing a maintainable MVC structure with decoupled presentation logic.
-- **Stack**: Python, Flask, SQLite, Vanilla JS.
-- **Mechanics**: Delivered a RESTful application separating routing, database transactions, and frontend rendering for clear testability.
-
-### [Stateless Edge Portfolio](./edge-portfolio-app)
-A high-performance personal portfolio deployment avoiding heavy front-end frameworks. 
-- **Challenge**: Achieving sub-50ms Time-To-First-Byte (TTFB) and perfect Lighthouse scores.
-- **Stack**: Python, Flask, CSS Grid.
-- **Mechanics**: Used pure server-side rendering and zero external JS dependencies to deliver a 100% lightweight edge application.
-
 ---
 
-## Private & NDA Work
+## Selected Enterprise Micro-Architectures & Tooling
 
-Selected contract work and internal tooling built under NDA:
+High-impact technical implementations focused on architectural purity:
 
-1. **Distributed Task Queue Manager**: Built a producer-consumer background worker system using Redis to offload blocking API calls.
-2. **Order Matching Engine Shell**: Drafted a memory-optimized limit order book in Python to match fast transactions.
-3. **Fraud Detection Service**: Developed a Pandas-based screening microservice that flags transactional anomalies based on historical velocity.
-4. **Auth Provider Component**: Set up a centralized JWT Identity Provider (OAuth2 pattern) for multi-tenant backend security.
-5. **Real-time Data Aggregator**: Wrote an ingestion script that normalizes chaotic WebSocket streams into a single downstream schema.
+1. **Distributed Task Queue**: Built a producer-consumer background worker system using threads, **Exponential Retry**, and **Dead-lettering** to offload blocking API calls.
+2. **Order Matching Engine**: Implemented a memory-optimized limit order book in Python using **Min/Max Heaps** for efficient bid/ask matching.
+3. **Algorithmic Fraud Detection**: Developed a **Pandas-based screening microservice** utilizing statistical **Z-Score analysis** and velocity checks to flag anomalies.
+4. **Custom JWT Auth Provider**: Set up a centralized Identity Provider using a **pure Python JWT implementation** (no external security frameworks) for maximum control and idempotency.
+5. **Real-time Data Aggregator**: Wrote a high-concurrency ingestion script that normalizes chaotic WebSocket streams into a single downstream schema.
 
 ---
 
