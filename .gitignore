@@ -1,0 +1,44 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+*.bak
+
+# SQLite databases
+*.db
+*.db-shm
+*.db-wal
+
+# Logging
+*.log
+logs/
+
+# User Scripts (BAT)
+*.bat
+
+# Scratch/Temporary/Research files
+_reset_db.py
+check_results.py
+console_output.log
+dump.txt
+final_report_script.py
+final_results.txt
+implementation_plan.md
+omniquant_kernel.log
+reset.py
+simple_summary.py
+test_*.py
+simple_summary.py
+check_results.py
+
+# VS Code / IDE stuff
+.vscode/
+.idea/
+.DS_Store
