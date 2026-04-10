@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional portfolio of full-stack development projects.">
+    <title>Professional Portfolio</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="container hero-content">
+            <span class="eyebrow">Full-Stack Developer</span>
+            <h1>Building production-grade applications and reliable systems.</h1>
+            <p>Python, Flask, data engineering. Clean architecture and performance-first approach.</p>
+            <div class="hero-actions">
+                <a href="#projects" class="button primary">View Projects</a>
+                <a href="#contact" class="button secondary">Get in Touch</a>
+            </div>
+        </div>
+    </header>\n
+    <main class="container">
+        <section class="intro">
+            <div>
+                <h2>Senior-level development with modern practices</h2>
+                <p>Experienced in designing scalable systems, optimizing data pipelines, and delivering maintainable code.</p>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <strong>3</strong>
+                    <span>Production Projects</span>
+                </div>
+                <div class="stat-card">
+                    <strong>100%</strong>
+                    <span>Deployment Ready</span>
+                </div>
+                <div class="stat-card">
+                    <strong>Architecture</strong>
+                    <span>SOLID Design Patterns</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="section-head">
+                <h2>Featured Projects</h2>
+                <p>Production-ready applications demonstrating full-stack capabilities with focus on architecture.</p>
+            </div>
+            <div class="project-tags">
+                <button class="tag active" data-filter="all">All</button>
+                <button class="tag" data-filter="python">Python</button>
+                <button class="tag" data-filter="flask">Flask</button>
+                <button class="tag" data-filter="data">Data/Automation</button>
+                <button class="tag" data-filter="javascript">JavaScript</button>
+            </div>
+            <div class="grid project-grid" id="projectGrid">
+                {% for project in projects %}
+                <article class="card project-card" data-tech="{{ project.tech | lower }}">
+                    <div class="card-top">
+                        <h3>{{ project.name }}</h3>
+                        <span class="tech-stack">{{ project.tech }}</span>
+                    </div>
+                    <p>{{ project.description }}</p>
+                    <a href="{{ project.link }}" target="_blank" rel="noopener noreferrer" class="button link">View on GitHub</a>
+                </article>
+                {% endfor %}
+            </div>
+        </section>
+
+        <section class="skills">
+            <h2>Technical Competencies</h2>
+            <div class="skills-list">
+                {% for skill in skills %}
+                <span class="skill-pill">{{ skill }}</span>
+                {% endfor %}
+            </div>
+        </section>
+
+        <section id="contact" class="contact banner">
+            <div>
+                <h2>Let's work together</h2>
+                <p>Open to remote opportunities and challenging projects.</p>
+            </div>
+            <a href="mailto:firmenetto@gmail.com" class="button primary">Send Email</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Engineered with Python, Flask, and clean code principles.</p>
+        </div>
+    </footer>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
