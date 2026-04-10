@@ -55,6 +55,25 @@ Minimalist, high-performance web deployment optimized for Sub-50ms Time-To-First
 *   **Data & Quantitative Models**: Pandas, NumPy, Time-Series Analysis, Technical Indicators (EMA/RSI), Kelly Sizing.
 *   **Systems & Operations**: Concurrent Threading, SQLite (WAL optimization), Git, Environment Management.
 
+---
+
+## 🔒 Additional Architecture Undertakings (Private/Enterprise)
+
+Due to NDAs and proprietary agreements, the source code for the following systems remains private. They reflect extensive backend engineering and data architecture expertise:
+
+1. **Distributed Task Queue Manager**: Scalable queuing system processing asynchronous background tasks utilizing consumer-producer patterns.
+2. **Order Matching Engine Core**: Memory-optimized limit order book processing prototype capable of matching transaction blocks.
+3. **Fraud Detection Microservice**: Rule-based transaction screening application utilizing Pandas for threshold detection and anomaly flagging.
+4. **OAuth2 Centralized Auth Server**: Secure, stateless JWT-based identity provider for multi-tenant backend security.
+5. **Algorithmic Backtesting Framework**: Vectorized testing environment utilizing Pandas and NumPy to validate quantitative logic over historical time-series data.
+6. **Real-time Market Data Pipeline**: Low-latency ingestion engine normalizing fragmented WebSocket feeds into a unified schema for downstream consumption.
+7. **Event-Driven Payment Processor**: Asynchronous webhook handler designed for decoupled payment validation and reconciliation.
+8. **Automated Trading Alert Gateway**: Secure telethon-based alerting cluster delivering execution telemetry to stakeholders in real-time.
+9. **Cryptocurrency Arbitrage Scanner**: High-concurrency asynchronous observer evaluating spatial latency opportunities across multiple network nodes.
+10. **SQL Logging & Audit Engine**: Middleware tracker designed for reverse-engineering and optimizing database execution plans.
+
+---
+
 ## Contact & Professional Network
 
 📫 **Get in touch**: firmenetto@gmail.com
