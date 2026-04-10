@@ -30,7 +30,7 @@ Backend engineer focused on data-intensive applications and low-latency systems.
 - **Recruitment Data API:** Delivered a RESTful application separating routing, database transactions, and frontend rendering, avoiding tight coupling.
 - **Edge Deployment Optimization:** Deployed a personal portfolio web layer using zero external JS/CSS frameworks to achieve sub-50ms Time-To-First-Byte (TTFB).
 
-### Selected NDA Prototyping
+### Selected Enterprise Micro-Architectures & Tooling
 - **Distributed Task Queue Manager:** Built a producer-consumer background worker system using Redis to offload blocking API calls.
 - **Order Matching Engine:** Drafted a memory-optimized limit order book in Python to match fast transactions.
 - **Fraud Detection Service:** Developed a Pandas-based screening microservice that flags transactional anomalies based on historical velocity.
